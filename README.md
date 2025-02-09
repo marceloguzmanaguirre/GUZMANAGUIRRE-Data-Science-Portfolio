@@ -40,8 +40,8 @@ LLM-applications - <em>Projects using LLMs and prompt engineering</em>
 ___
 ### Portfolio Updates ⏰ 
 I'll track my portfolio development here through three major updates. Each version will show my growing proficiency with interactive data applications. I'm looking forward to seeing how my apps evolve from basic visualizations to more complex integrations.
-<details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/46344c125511dc72937fd147b977cf2251578837/basic_streamlit_app'>
-Version 1 - <em>First update (Week 4)</em> </a>
+<details><summary>
+Version 1 - <em>First update (Week 4)</em> 
 </summary></details>
 <details><summary>
 Version 2 - <em>Second update (Week 8)</em>
