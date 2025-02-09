@@ -6,7 +6,7 @@ df = pd.read_csv("data/Air_Quality.csv")
 data = df
 
 # Set up the Title and description
-st.title("NYC Air Quality Database")
+st.title("NYC Air Quality Database Explorer")
 st.write("This app allows you to explore NYC Air Quality data with interactive filtering options.")
 
 # Interactive filtering options
