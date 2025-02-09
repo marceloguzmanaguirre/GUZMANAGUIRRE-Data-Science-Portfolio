@@ -2,7 +2,7 @@
 <em>This repository contains projects and assignments for "Introduction to Data Science" at the University of Notre Dame (Spring 2025). The portfolio demonstrates skills in data analysis, visualization, machine learning, and ethical AI applications using Python. Also, this is where I'll keep my regular homework organized; I'm a firm believer that every assignment will help build toward my larger portfolio pieces while letting me practice specific skills.
 
 </em>
-  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/5cac8fbc34be7d911f3213fe85cd00201257ff0b/Screenshot%202025-01-27%20at%2019.20.18.png"/>
+  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/27ba02956e1c1a9ba0c3a0bb843f9898162285bb/Screenshot%202025-01-27%20at%2019.20.18.png"/>
 
 ___
 ### Exploratory Data Analysis 🧐
