@@ -9,10 +9,6 @@ data = df
 st.title("NYC Air Quality Database")
 st.write("This app allows you to explore NYC Air Quality data with interactive filtering options.")
 
-# Show a sample of the dataset
-st.subheader("Sample Data")
-st.dataframe(data.head())
-
 # Interactive filtering options
 # Dropdown for Name (air quality indicators)
 name = st.selectbox("Select Air Quality Indicator:", options=["All"] + list(data["Name"].unique()))
@@ -36,14 +32,14 @@ filtered_data = filtered_data if selected_time_period == "All" else filtered_dat
 # Data Value range slider
 min_value, max_value = float(data["Data Value"].min()), float(data["Data Value"].max())
 data_value_range = st.slider(
-    "Select Data Value range:",
-    min_value=min_value,
-    max_value=max_value,
-    value=(min_value, max_value)
+   "Select Data Value range:",
+   min_value=min_value,
+   max_value=max_value,
+   value=(min_value, max_value)
 )
 filtered_data = filtered_data[
-    (filtered_data["Data Value"] >= data_value_range[0]) & 
-    (filtered_data["Data Value"] <= data_value_range[1])
+   (filtered_data["Data Value"] >= data_value_range[0]) &
+   (filtered_data["Data Value"] <= data_value_range[1])
 ]
 
 # Display filtered data and count
