@@ -27,6 +27,13 @@ This interactive web application provides a user-friendly interface to explore a
 - Air_Quality.csv dataset
 
 ## Getting Started
-1. Ensure all requirements are installed
-2. Place Air_Quality.csv in the data folder
-3. Run the application using: `streamlit run main.py`
+To run the Air Quality Explorer app:
+1. Clone this repository to your local machine
+2. Navigate to the GUZMANAGUIRRE-Data-Science-Portfolio directory in your terminal
+3. Install required packages: streamlit and pandas using "pip install streamlit pandas"
+4. Ensure proper file structure:
+ - basic_streamlit_app folder should contain:
+   - data folder with Air_Quality.csv inside
+   - main.py file
+5. Run the app: Use "streamlit run basic_streamlit_app/main.py"
+6. Access the app: It will open automatically in your browser
