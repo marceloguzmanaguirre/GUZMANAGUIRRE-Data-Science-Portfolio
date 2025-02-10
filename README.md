@@ -40,7 +40,7 @@ LLM-applications - <em>Projects using LLMs and prompt engineering</em>
 ___
 ### Portfolio Updates ⏰ 
 I'll track my portfolio development here through three major updates. Each version will show my growing proficiency with interactive data applications. I'm looking forward to seeing how my apps evolve from basic visualizations to more complex integrations.
-<details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/96321083864f049c60a075a664861f98f3cc41af/basic_streamlit_app'> 
+<details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/67ff093ad6721805db77e0e6e129b28bad2384bb/basic_streamlit_app'> 
 First update (Week 4)- <em>NYC Air Quality Database Explorer</em> </a>
 </summary></details>
 <details><summary>
