@@ -22,8 +22,9 @@ locations = st.selectbox("Select Location:", options=["All"] + list(filtered_dat
 # Filter data based on location selection
 filtered_data = filtered_data if locations == "All" else filtered_data[filtered_data["Geo Place Name"] == locations]
 
-# Time Period filter
-time_periods = sorted(list(filtered_data["Time Period"].unique()))
+# Time Period filter - exclude Annual Averages
+time_periods = sorted([period for period in filtered_data["Time Period"].unique() 
+                      if "Annual Average" not in str(period)])
 selected_time_period = st.selectbox("Select Time Period:", options=["All"] + time_periods)
 
 # Filter data based on time period selection
