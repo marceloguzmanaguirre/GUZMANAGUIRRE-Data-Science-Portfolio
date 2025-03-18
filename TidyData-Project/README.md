@@ -40,12 +40,12 @@ Running the Notebook
 
 ___
 
-### 🔍 Dataset
+### Dataset 🔍
 
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/77dfed97e6f5711d9cbbbc9a713f9d7b5bdcb105/TidyData-Project/Screenshot%202025-03-18%20at%2000.26.50.png"/>
 ___
 
-### 🛠️ Technologies Used
+### Technologies Used 🛠️ 
 
 <details><summary>Python - <em>Core programming language</em></summary></details>
 <details><summary>Pandas - <em>Data manipulation and analysis</em></summary></details>
@@ -54,15 +54,13 @@ ___
 
 ___
 
-###📸 Visual Examples
-
-Data Transformation
-![Before and After Tidying](https://placeholder-for-your-image.png)
-*Screenshot showing the data before and after the tidying process*
-
-Key Visualization
-![Department Spending Trends](https://placeholder-for-your-visualization.png)
-*Visualization of spending trends across top departments*
+###Key Visualization Examples 📸 
+  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.08.png"/>
+  *Line graph*
+  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.16.png"/>
+  *Bar chart*
+  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.32.png"/>
+  *Heat map*
 
 ___
 
