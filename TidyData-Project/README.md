@@ -58,11 +58,11 @@ ___
 
 ### Key Visualization Examples 📸 
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.08.png"/>
-  *Line graph*
+Line graph
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.16.png"/>
-  *Bar chart*
+Bar chart
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.32.png"/>
-  *Heat map*
+Heat map
 
 ___
 
