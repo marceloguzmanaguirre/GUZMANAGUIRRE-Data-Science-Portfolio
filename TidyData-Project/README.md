@@ -54,7 +54,7 @@ ___
 
 ___
 
-###Key Visualization Examples 📸 
+### Key Visualization Examples 📸 
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.08.png"/>
   *Line graph*
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.16.png"/>
@@ -64,18 +64,9 @@ ___
 
 ___
 
-### 📚 References
+### References 📚
 
 - [Pandas Cheat Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
 - [Tidy Data Paper by Hadley Wickham](https://www.jstatsoft.org/article/view/v059i10)
 - [Data Wrangling with pandas](https://pandas.pydata.org/docs/user_guide/reshaping.html)
 - [Matplotlib Documentation](https://matplotlib.org/stable/users/index.html)
-
-___
-
-### 🔮 Future Work
-
-This project establishes a foundation for further analysis of government spending patterns, potentially exploring:
-<details><summary>Correlation with economic indicators</summary></details>
-<details><summary>Department-specific trend analysis</summary></details>
-<details><summary>Comparative spending across political administrations</summary></details>
