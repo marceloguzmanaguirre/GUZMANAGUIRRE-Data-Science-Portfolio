@@ -2,7 +2,6 @@
 
 <em>This repository contains my work for the Tidy Data Project, where I dive into federal research and development spending data from 1976 to 2017, exploring how different government departments have allocated resources as a percentage of GDP over time.</em>
 
-![Data Science Banner](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/27ba02956e1c1a9ba0c3a0bb843f9898162285bb/Screenshot%202025-01-27%20at%2019.20.18.png)
 ___
 
 ## 🔍 Project Overview
