@@ -5,11 +5,30 @@
 ___
 
 ## 🔍 Project Overview
-This project applies tidy data principles to transform and analyze a dataset of federal R&D spending. Tidy data follows three key rules:
-1. Each variable forms a column
-2. Each observation forms a row
-3. Each type of observational unit forms a table
-By restructuring our dataset to follow these principles, we can more easily analyze spending patterns and trends across different government departments over time.
+## 🎯 Project Goals
+
+- 🧹 Clean and transform the data following tidy data principles
+- 📈 Create visualizations to explore spending patterns
+- 🔄 Apply melting techniques to restructure wide-format data
+- 📊 Analyze trends using aggregation functions
+- 🧠 Practice real-world data science workflow
+
+___
+
+## ✨ Tidy Data Principles Applied
+
+<details><summary>Each variable in its own column</summary>
+  <p>Restructuring data so that year, department, spending, and GDP exist as separate columns rather than embedded in column names.</p>
+</details>
+
+<details><summary>Each observation in its own row</summary>
+  <p>Transforming the wide format to ensure each department-year combination has its own row.</p>
+</details>
+
+<details><summary>Each type of observational unit in its own table</summary>
+  <p>Maintaining proper separation of data concepts to ensure analytical clarity.</p>
+</details>
+
 
 ___
 
