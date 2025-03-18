@@ -1,17 +1,17 @@
-## 📊 TidyData Project 📈
+## TidyData Project 📈
 
 <em>This repository contains my work for the Tidy Data Project, where I dive into federal research and development spending data from 1976 to 2017, exploring how different government departments have allocated resources as a percentage of GDP over time.</em>
 
 ___
 
-### 🔍 Project Overview
+### Project Overview 🔍 
 
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a246505b737d915e84ff29a49ec6351a7334cd96/TidyData-Project/Screenshot%202025-03-17%20at%2023.50.14.png"/>
 
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/34ca62bcc627964dadc92ec572c02e11397ce4b4/TidyData-Project/Screenshot%202025-03-18%20at%2000.08.26.png"/>
 ___
 
-### 📋 Instructions
+### Instructions 📋 
 
 Dependencies
 To run this notebook, you'll need the following Python libraries:
