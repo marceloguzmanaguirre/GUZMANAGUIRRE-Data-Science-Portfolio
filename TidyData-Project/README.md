@@ -6,7 +6,6 @@ ___
 
 ### 🔍 Project Overview
 
- 🎯 Project Goals
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a246505b737d915e84ff29a49ec6351a7334cd96/TidyData-Project/Screenshot%202025-03-17%20at%2023.50.14.png"/>
 
 ✨Tidy Data Principles Applied
