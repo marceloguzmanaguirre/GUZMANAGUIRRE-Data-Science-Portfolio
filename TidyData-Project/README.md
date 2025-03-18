@@ -43,13 +43,6 @@ ___
 ### 🔍 Dataset
 
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/77dfed97e6f5711d9cbbbc9a713f9d7b5bdcb105/TidyData-Project/Screenshot%202025-03-18%20at%2000.26.50.png"/>
-
-Pre-processing Steps:
-<details><summary>Data was obtained from public government records</summary></details>
-<details><summary>Original format is in "wide" format with years as columns</summary></details>
-<details><summary>GDP values are embedded within column names</summary></details>
-<details><summary>Dataset requires tidying before analysis can begin</summary></details>
-
 ___
 
 ### 🛠️ Technologies Used
