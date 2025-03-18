@@ -7,13 +7,7 @@ ___
 ### 🔍 Project Overview
 
  🎯 Project Goals
-<details><summary>Clean and transform the data following tidy data principles</summary></details>
-<details><summary>Create visualizations to explore spending patterns</summary></details>
-<details><summary>Apply melting techniques to restructure wide-format data</summary></details>
-<details><summary>Analyze trends using aggregation functions</summary></details>
-<details><summary>Practice real-world data science workflow</summary></details>
-
-
+  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a246505b737d915e84ff29a49ec6351a7334cd96/TidyData-Project/Screenshot%202025-03-17%20at%2023.50.14.png"/>
 
 ✨Tidy Data Principles Applied
 <details><summary>Each variable in its own column</summary>
