@@ -9,6 +9,7 @@ ___
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a246505b737d915e84ff29a49ec6351a7334cd96/TidyData-Project/Screenshot%202025-03-17%20at%2023.50.14.png"/>
 
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/34ca62bcc627964dadc92ec572c02e11397ce4b4/TidyData-Project/Screenshot%202025-03-18%20at%2000.08.26.png"/>
+
 ___
 
 ### Instructions 📋 
