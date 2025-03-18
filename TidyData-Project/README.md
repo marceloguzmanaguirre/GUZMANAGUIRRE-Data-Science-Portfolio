@@ -8,16 +8,7 @@ ___
 
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a246505b737d915e84ff29a49ec6351a7334cd96/TidyData-Project/Screenshot%202025-03-17%20at%2023.50.14.png"/>
 
-✨Tidy Data Principles Applied
-<details><summary>Each variable in its own column</summary>
-  <p>Restructuring data so that year, department, spending, and GDP exist as separate columns rather than embedded in column names.</p>
-</details>
-<details><summary>Each observation in its own row</summary>
-  <p>Transforming the wide format to ensure each department-year combination has its own row.</p>
-</details>
-<details><summary>Each type of observational unit in its own table</summary>
-  <p>Maintaining proper separation of data concepts to ensure analytical clarity.</p>
-</details>
+  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/34ca62bcc627964dadc92ec572c02e11397ce4b4/TidyData-Project/Screenshot%202025-03-18%20at%2000.08.26.png"/>
 ___
 
 ### 📋 Instructions
