@@ -6,14 +6,16 @@ ___
 
 ### 🔍 Project Overview
 
-Project Goals
+ 🎯 Project Goals
 <details><summary>Clean and transform the data following tidy data principles</summary></details>
 <details><summary>Create visualizations to explore spending patterns</summary></details>
 <details><summary>Apply melting techniques to restructure wide-format data</summary></details>
 <details><summary>Analyze trends using aggregation functions</summary></details>
 <details><summary>Practice real-world data science workflow</summary></details>
 
-Tidy Data Principles Applied
+
+
+✨Tidy Data Principles Applied
 <details><summary>Each variable in its own column</summary>
   <p>Restructuring data so that year, department, spending, and GDP exist as separate columns rather than embedded in column names.</p>
 </details>
