@@ -43,6 +43,7 @@ ___
 ### Dataset 🔍
 
   <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/77dfed97e6f5711d9cbbbc9a713f9d7b5bdcb105/TidyData-Project/Screenshot%202025-03-18%20at%2000.26.50.png"/>
+
 ___
 
 ### Technologies Used 🛠️ 
