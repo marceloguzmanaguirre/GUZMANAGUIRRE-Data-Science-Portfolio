@@ -1,35 +1,35 @@
 import streamlit as st
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, ConfusionMatrixDisplay
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.utils.multiclass import type_of_target
 
 # Title and introduction
-st.title("Interactive Supervised Machine Learning App")
+st.title("🧠 Interactive Supervised Machine Learning App")
 st.write("""
-This app allows you to upload your dataset, select features, pick a target variable,
-choose a machine learning model (Decision Tree or Logistic Regression), adjust key hyperparameters, 
-and see model performance metrics.
+Upload a dataset (or use the sample), choose features and a target, train a model, and explore results visually!
 """)
 
 # Sidebar configuration
-st.sidebar.header("Configuration")
+st.sidebar.header("📁 Configuration")
 
 # Option to use sample dataset
 sample_data = st.sidebar.checkbox("Use Sample Dataset")
 
-# Option to upload your CSV file
+# File upload
 upload_file = st.sidebar.file_uploader("Upload your CSV dataset", type=["csv"])
 
-# Function to load sample dataset
 @st.cache_data
 def load_sample_data():
     from sklearn.datasets import load_iris
     data = load_iris(as_frame=True)
     return data.frame
 
-# Define DataFrame based on user input
+# Load DataFrame
 if sample_data:
     df = load_sample_data()
 elif upload_file is not None:
@@ -39,60 +39,95 @@ elif upload_file is not None:
         st.error(f"Error reading the CSV file: {e}")
         st.stop()
 else:
-    st.warning("Awaiting CSV file upload or enabling the sample dataset.")
+    st.warning("Please upload a CSV file or use the sample dataset.")
     st.stop()
 
-# Display dataset preview
-st.subheader("Dataset Preview")
+# Show data preview
+st.subheader("🔍 Dataset Preview")
 st.dataframe(df.head())
 
-# User selects the target variable and features
-target = st.selectbox("Select the target variable", df.columns)
-features = st.multiselect("Select feature columns (at least one)", [col for col in df.columns if col != target])
+# Feature + target selection
+target = st.selectbox("🎯 Select the target variable", df.columns)
+features = st.multiselect("🧰 Select feature columns", [col for col in df.columns if col != target])
 if not features:
-    st.error("Please select at least one feature to continue.")
+    st.error("Select at least one feature.")
     st.stop()
 
-# Sidebar options for train/test split
-st.sidebar.subheader("Train/Test Split")
-test_size = st.sidebar.slider("Test set proportion", min_value=0.1, max_value=0.5, value=0.2)
+# Train/Test split config
+st.sidebar.subheader("🧪 Train/Test Split")
+test_size = st.sidebar.slider("Test set proportion", 0.1, 0.5, 0.2)
 
-# Sidebar options for model selection
-st.sidebar.subheader("Model Selection")
+# Model selection
+st.sidebar.subheader("📊 Model Selection")
 model_option = st.sidebar.selectbox("Choose a model", ["Decision Tree", "Logistic Regression"])
-
-# Model-specific hyperparameters
 if model_option == "Decision Tree":
-    max_depth = st.sidebar.slider("Decision Tree: Maximum Depth", min_value=1, max_value=20, value=5)
-else:
-    # For Logistic Regression, you could add other hyperparameters such as the regularization parameter.
-    st.sidebar.info("Default hyperparameters will be used for Logistic Regression.")
+    max_depth = st.sidebar.slider("Decision Tree: Maximum Depth", 1, 20, 5)
 
-if st.button("Train Model"):
-    # Prepare data for training
+else:
+    st.sidebar.info("Using default Logistic Regression parameters")
+
+# Model training
+if st.button("🚀 Train Model"):
     X = df[features]
     y = df[target]
-    
-    # Split the data into train and test sets
+
+    # Validate target type
+    if model_option in ["Decision Tree", "Logistic Regression"]:
+        target_type = type_of_target(y)
+        if target_type not in ["binary", "multiclass"]:
+            st.error("❗ For classification, choose a categorical target (e.g., species/class labels).")
+            st.stop()
+
+    # Split
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=42)
-    
-    # Initialize and train the selected model
+
+    # Train model
     if model_option == "Decision Tree":
         model = DecisionTreeClassifier(max_depth=max_depth, random_state=42)
     else:
         model = LogisticRegression(max_iter=1000)
-    
+
     model.fit(X_train, y_train)
     predictions = model.predict(X_test)
-    
-    # Compute performance metrics
+
+    # Evaluate
     acc = accuracy_score(y_test, predictions)
     cm = confusion_matrix(y_test, predictions)
     cr = classification_report(y_test, predictions)
-    
-    # Display performance results
-    st.subheader("Model Performance")
-    st.write("**Accuracy:**", round(acc, 4))
-    st.write("**Confusion Matrix:**")
-    st.write(cm)
-    st.text("**Classification Report:**\n" + cr)
+
+    # Output results
+    st.subheader("✅ Model Performance")
+    st.write(f"**Accuracy:** {round(acc, 4)}")
+    st.text("Classification Report:\n" + cr)
+
+    # --- Visualization 1: Confusion Matrix ---
+    st.subheader("🧮 Confusion Matrix (Visualized)")
+    fig, ax = plt.subplots()
+    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=model.classes_)
+    disp.plot(ax=ax, cmap="Blues", colorbar=False)
+    ax.set_title("Confusion Matrix", fontsize=14, fontweight='bold')
+    st.pyplot(fig)
+
+# --- Visualization 2: Correlation Heatmap ---
+st.subheader("🔗 Feature Correlation Heatmap")
+with st.expander("See correlation between selected numeric features"):
+    numeric_cols = df[features + [target]].select_dtypes(include='number')
+    if not numeric_cols.empty:
+        corr = numeric_cols.corr()
+        fig, ax = plt.subplots(figsize=(8, 6))
+        sns.heatmap(corr, annot=True, cmap='coolwarm', linewidths=0.5, ax=ax)
+        ax.set_title("Correlation Matrix", fontsize=14, fontweight='bold')
+        st.pyplot(fig)
+    else:
+        st.info("No numeric columns found to plot correlation matrix.")
+
+# --- Visualization 3: Histogram + KDE ---
+st.subheader("📊 Histogram + KDE of a Feature")
+selected_hist_feature = st.selectbox("Choose a feature to explore distribution", features)
+if selected_hist_feature:
+    fig, ax = plt.subplots(figsize=(8, 4))
+    sns.histplot(df[selected_hist_feature], kde=True, color="skyblue", edgecolor="black", ax=ax)
+    ax.set_title(f"Distribution of {selected_hist_feature}", fontsize=14, fontweight='bold')
+    ax.set_xlabel(selected_hist_feature, fontsize=12)
+    ax.set_ylabel("Frequency", fontsize=12)
+    st.pyplot(fig)
