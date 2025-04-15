@@ -46,9 +46,10 @@ First update (Week 4)- <em>NYC Air Quality Database Explorer</em> </a>
 <details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/TidyData-Project'>
 Second update (Week 8)- <em>Tidy Data Project</em> </a>
 </summary>
+
 What the app does & how it builds on your understanding of data science 🧠 
   
-  This project transforms raw federal R&D spending data into a tidy format and uses visualizations to analyze trends over time, reinforcing my skills in data wrangling, regex extraction, and meaningful interpretation through visual analytics.
+This project transforms raw federal R&D spending data into a tidy format and uses visualizations to analyze trends over time, reinforcing my skills in data wrangling, regex extraction, and meaningful interpretation through visual analytics.
 
 How it complements your overall portfolio 🧰
 
@@ -58,9 +59,10 @@ It enhances my portfolio by demonstrating my ability to clean, reshape, and visu
 <details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLStreamlitApp'>
 Third update (Week 12)- <em>Machine Learning App</em> </a>
 </summary>
+
 What the app does & how it builds on your understanding of data science 🧠 
-  
-  This app allows users to upload a dataset, select features and a target variable, train a supervised machine learning model, and explore performance through visualizations, reinforcing my understanding of model selection, evaluation, and interpretability.
+
+This app allows users to upload a dataset, select features and a target variable, train a supervised machine learning model, and explore performance through visualizations, reinforcing my understanding of model selection, evaluation, and interpretability.
 
 How it complements your overall portfolio 🧰
 
