@@ -1,4 +1,4 @@
-## This is my Streamlit ML App Repository! 🤖
+## This is my Streamlit ML App! 🤖
 <em>This repository contains my interactive machine learning application, developed using Python and Streamlit, as part of the "Introduction to Data Science" course at the University of Notre Dame (Spring 2025). This app allows users to upload their own datasets, select machine learning models, tune hyperparameters, and visualize performance metrics. The project reflects core concepts in supervised learning, model interpretability, and user-friendly deployment.</em>
 ___
 ### Project Overview 🧑🏻
