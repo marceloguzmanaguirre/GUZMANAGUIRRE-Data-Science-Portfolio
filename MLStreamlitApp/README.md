@@ -30,21 +30,21 @@ ___
   - Ensures target variable is categorical when using classifiers
  
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/2.png"/>
+
 ___
 ### Data Visualizations 📊
-- **Confusion Matrix 🧮**: This plot displays the number of correct and incorrect predictions, giving insight into how well the model performs on each class. Especially helpful for classification tasks.
+
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/3.png"/>
+This plot displays the number of correct and incorrect predictions, giving insight into how well the model performs on each class. Especially helpful for classification tasks.
 
-- **Feature Importance 🌲**: For the Decision Tree model, this horizontal bar chart shows which features had the most influence on the model's predictions.
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/4.png"/>
+For the Decision Tree model, this horizontal bar chart shows which features had the most influence on the model's predictions.
 
-- **Correlation Heatmap 🔗**: Shows the pairwise correlation coefficients between numeric features. Helps identify multicollinearity and understand feature relationships.
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/5.png"/>
+Shows the pairwise correlation coefficients between numeric features. Helps identify multicollinearity and understand feature relationships.
 
-- **Histogram + KDE 📈**: This combo plot visualizes the distribution of a selected numeric feature. The histogram shows counts, while the KDE overlay reveals the shape of the distribution.
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/6.png"/>
-
-Each visualization is implemented using Matplotlib and Seaborn in accordance with class formatting.
+This combo plot visualizes the distribution of a selected numeric feature. The histogram shows counts, while the KDE overlay reveals the shape of the distribution.
 
 ___
 ### Visual Examples 🖼️
