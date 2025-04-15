@@ -4,7 +4,7 @@ ___
 ### Project Overview 🧑🏻
 The goal of this project is to provide an interactive and visual experience for supervised machine learning. The app supports both Decision Tree and Logistic Regression classifiers. 
 
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/1.png"/>
 
 This project strengthens my understanding of data preprocessing, modeling, and interactive app development with Streamlit.
 
@@ -29,20 +29,20 @@ ___
 - **Error Handling:**
   - Ensures target variable is categorical when using classifiers
  
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/2.png"/>
 ___
 ### Data Visualizations 📊
 - **Confusion Matrix 🧮**: This plot displays the number of correct and incorrect predictions, giving insight into how well the model performs on each class. Especially helpful for classification tasks.
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/3.png"/>
 
 - **Feature Importance 🌲**: For the Decision Tree model, this horizontal bar chart shows which features had the most influence on the model's predictions.
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/4.png"/>
 
 - **Correlation Heatmap 🔗**: Shows the pairwise correlation coefficients between numeric features. Helps identify multicollinearity and understand feature relationships.
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/5.png"/>
 
 - **Histogram + KDE 📈**: This combo plot visualizes the distribution of a selected numeric feature. The histogram shows counts, while the KDE overlay reveals the shape of the distribution.
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/6.png"/>
 
 Each visualization is implemented using Matplotlib and Seaborn in accordance with class formatting.
 
@@ -51,6 +51,10 @@ ___
 Below are a few screenshots from the app:
 
 <details><summary>Main Interface</summary>
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/main-interface.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/7.png"/>
+</details>
+
+<details><summary>Error message to facilitate user engagment with the statistical model</summary>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/8.png"/>
 </details>
 
