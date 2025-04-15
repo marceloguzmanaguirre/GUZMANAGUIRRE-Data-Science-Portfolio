@@ -43,8 +43,8 @@ I'll track my portfolio development here through three major updates. Each versi
 <details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/67ff093ad6721805db77e0e6e129b28bad2384bb/basic_streamlit_app'> 
 First update (Week 4)- <em>NYC Air Quality Database Explorer</em> </a>
 </summary></details>
-<details><summary>
-Version 2 - <em>Second update (Week 8)</em>
+<details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/TidyData-Project'>
+Second update (Week 8)- <em>Tidy Data Project</em> </a>
 </summary></details>
 <details><summary>
 Version 3 - <em>Third update (Week 12)</em>
