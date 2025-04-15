@@ -46,6 +46,6 @@ First update (Week 4)- <em>NYC Air Quality Database Explorer</em> </a>
 <details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/TidyData-Project'>
 Second update (Week 8)- <em>Tidy Data Project</em> </a>
 </summary></details>
-<details><summary>
-Version 3 - <em>Third update (Week 12)</em>
+<details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLStreamlitApp'>
+Third update (Week 12)- <em>Machine Learning App</em> </a>
 </summary></details>
