@@ -42,28 +42,29 @@ ___
 I'll track my portfolio development here through three major updates. Each version will show my growing proficiency with interactive data applications. I'm looking forward to seeing how my apps evolve from basic visualizations to more complex integrations.
 <details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/67ff093ad6721805db77e0e6e129b28bad2384bb/basic_streamlit_app'> 
 First update (Week 4)- <em>NYC Air Quality Database Explorer</em> </a>
-</summary>
-What the app does & how it builds on your understanding of data science 🧠 
-This project transforms raw federal R&D spending data into a tidy format and uses visualizations to analyze trends over time, reinforcing my skills in data wrangling, regex extraction, and meaningful interpretation through visual analytics.
-How it complements your overall portfolio 🧰
-It enhances my portfolio by demonstrating my ability to clean, reshape, and visualize complex datasets using Python, aligning with best practices in exploratory data analysis and reproducible research.
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/7.png"/>
-</details>
+</summary></details>
 <details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/TidyData-Project'>
 Second update (Week 8)- <em>Tidy Data Project</em> </a>
 </summary>
 What the app does & how it builds on your understanding of data science 🧠 
+
 This project transforms raw federal R&D spending data into a tidy format and uses visualizations to analyze trends over time, reinforcing my skills in data wrangling, regex extraction, and meaningful interpretation through visual analytics.
+
 How it complements your overall portfolio 🧰
+
 It enhances my portfolio by demonstrating my ability to clean, reshape, and visualize complex datasets using Python, aligning with best practices in exploratory data analysis and reproducible research.
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/7.png"/>
+
 </details>
 <details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLStreamlitApp'>
 Third update (Week 12)- <em>Machine Learning App</em> </a>
 </summary>
 What the app does & how it builds on your understanding of data science 🧠 
+
 This app allows users to upload a dataset, select features and a target variable, train a supervised machine learning model, and explore performance through visualizations, reinforcing my understanding of model selection, evaluation, and interpretability.
+
 How it complements your overall portfolio 🧰
+
 It complements my overall portfolio by demonstrating my ability to build interactive Python applications and deploy machine learning tools in a user-friendly, web-based format.
+
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/7.png"/>
 </details>
