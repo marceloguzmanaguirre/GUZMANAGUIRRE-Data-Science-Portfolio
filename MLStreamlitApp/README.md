@@ -3,6 +3,7 @@
 
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/main-interface.png"/>
 
+___
 ### Project Overview 🧑🏻
 The goal of this project is to provide an interactive and visual experience for supervised machine learning. The app supports both Decision Tree and Logistic Regression classifiers. Users can:
 - Upload a CSV file or use a sample dataset
@@ -12,6 +13,7 @@ The goal of this project is to provide an interactive and visual experience for 
 
 This project strengthens my understanding of data preprocessing, modeling, and interactive app development with Streamlit.
 
+___
 ### Instructions 🧭
 To run this app locally:
 
@@ -35,6 +37,7 @@ streamlit run app.py
 - matplotlib  
 - seaborn  
 
+___
 ### App Features ⚙️
 - **Models Used:**
   - Decision Tree Classifier: Max depth is adjustable via a slider.
@@ -46,14 +49,23 @@ streamlit run app.py
 - **Error Handling:**
   - Ensures target variable is categorical when using classifiers
 
+___
 ### Data Visualizations 📊
 - **Confusion Matrix 🧮**: This plot displays the number of correct and incorrect predictions, giving insight into how well the model performs on each class. Especially helpful for classification tasks.
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
+
 - **Feature Importance 🌲**: For the Decision Tree model, this horizontal bar chart shows which features had the most influence on the model's predictions.
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
+
 - **Correlation Heatmap 🔗**: Shows the pairwise correlation coefficients between numeric features. Helps identify multicollinearity and understand feature relationships.
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
+
 - **Histogram + KDE 📈**: This combo plot visualizes the distribution of a selected numeric feature. The histogram shows counts, while the KDE overlay reveals the shape of the distribution.
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
 
 Each visualization is implemented using Matplotlib and Seaborn in accordance with class formatting.
 
+___
 ### Visual Examples 🖼️
 Below are a few screenshots from the app:
 
@@ -61,18 +73,3 @@ Below are a few screenshots from the app:
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/main-interface.png"/>
 </details>
 
-<details><summary>Confusion Matrix</summary>
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/confusion-matrix.png"/>
-</details>
-
-<details><summary>Feature Importance</summary>
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/feature-importance.png"/>
-</details>
-
-<details><summary>Correlation Heatmap</summary>
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
-</details>
-
-<details><summary>Histogram + KDE</summary>
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/histogram-kde.png"/>
-</details>
