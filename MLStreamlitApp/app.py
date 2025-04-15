@@ -62,7 +62,7 @@ if model_option == "Decision Tree":
 else:
     st.sidebar.info("Using default Logistic Regression parameters")
 
-# Model training – Given that most apps we evaluated in class did not explain why certain features did not work well given the nature of the dataset provided by the user, I thought it made sense to include some kind of specification/error message here, to ensure better UX. I also split, train, and evluate the model here, while sharin some output results.
+# Model training. As most apps evaluated in class did not explain why certain features did not work well given the nature of the dataset provided by the user, I thought it made sense to include some kind of specification/error message here to ensure better UX. I also split, train, and evluate the model here, while sharing some output results.
 if st.button("Train Model 🚀"):
     X = df[features]
     y = df[target]
@@ -114,7 +114,7 @@ if st.button("Train Model 🚀"):
         ax.set_ylabel("Feature", fontsize=12)
         st.pyplot(fig)
 
-# Beyond the visualizations described and coed previously, I thought it would be useful to have a Correlation Heatmap and and Histogram + Kernel Density Estimation of a feature. I'll be providing more extensive rationales of why I chose these visualizations in the ReadMe 
+# Beyond the visualizations described and coded previously, I thought it would be useful to have a Correlation Heatmap and Histogram + Kernel Density Estimation of a feature. I'll be providing more extensive rationales of why I chose these visualizations in the ReadMe 
 st.subheader("Feature Correlation Heatmap 🔗")
 with st.expander("See correlation between selected numeric features 🔍"):
     numeric_cols = df[features + [target]].select_dtypes(include='number')
