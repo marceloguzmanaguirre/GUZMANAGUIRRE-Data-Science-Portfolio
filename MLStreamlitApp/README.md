@@ -1,15 +1,10 @@
 ## This is my Streamlit ML App Repository! 🤖
 <em>This repository contains my interactive machine learning application, developed using Python and Streamlit, as part of the "Introduction to Data Science" course at the University of Notre Dame (Spring 2025). This app allows users to upload their own datasets, select machine learning models, tune hyperparameters, and visualize performance metrics. The project reflects core concepts in supervised learning, model interpretability, and user-friendly deployment.</em>
-
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/main-interface.png"/>
-
 ___
 ### Project Overview 🧑🏻
-The goal of this project is to provide an interactive and visual experience for supervised machine learning. The app supports both Decision Tree and Logistic Regression classifiers. Users can:
-- Upload a CSV file or use a sample dataset
-- Choose a target variable and feature columns
-- Select a model and adjust hyperparameters
-- View model performance and intuitive visualizations
+The goal of this project is to provide an interactive and visual experience for supervised machine learning. The app supports both Decision Tree and Logistic Regression classifiers. 
+
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
 
 This project strengthens my understanding of data preprocessing, modeling, and interactive app development with Streamlit.
 
@@ -17,26 +12,11 @@ ___
 ### Instructions 🧭
 To run this app locally:
 
-1. Clone this repository:
-git clone https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-.git cd GUZMANAGUIRRE-Data-Science-Portfolio-/MLStreamlitApp
-
-2. Install the required Python packages:
-pip install -r requirements.txt
-
-3. Run the Streamlit app:
-streamlit run app.py
-
-
+1. Clone this repository
+2. Install the required Python packages (pip install -r requirements.txt)
+3. Run the Streamlit app (streamlit run app.py)
 4. Alternatively, view the deployed version here:  
-➡️ [Live Streamlit App](https://<your-streamlit-app-url>.streamlit.app)
-
-**Libraries used:**
-- streamlit  
-- pandas  
-- scikit-learn  
-- matplotlib  
-- seaborn  
-
+➡️ [Live Streamlit App](https://guzmanaguirre-data-science-portfolio-egpxyvdq5txsrvalakeby2.streamlit.app/)
 ___
 ### App Features ⚙️
 - **Models Used:**
@@ -48,7 +28,8 @@ ___
   - Visualize results instantly
 - **Error Handling:**
   - Ensures target variable is categorical when using classifiers
-
+ 
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/main/MLStreamlitApp/screenshots/correlation-heatmap.png"/>
 ___
 ### Data Visualizations 📊
 - **Confusion Matrix 🧮**: This plot displays the number of correct and incorrect predictions, giving insight into how well the model performs on each class. Especially helpful for classification tasks.
