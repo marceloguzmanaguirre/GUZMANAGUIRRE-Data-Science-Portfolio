@@ -91,7 +91,7 @@ if st.button("Train Model 🚀"):
     st.write(f"**Accuracy:** {round(acc, 4)}")
     st.text("Classification Report:\n" + cr)
 
-    # I thought it was valuable to add some visualizations here. In light of what we've been discussing in class over the last few weeks, I thought it was good to have a Confusion Matrix and Feature Importance to begin with
+    # I thought it was valuable to add some visualizations here. In light of what we've been discussing in class over the last few weeks, I thought it was good to have a Confusion Matrix and Feature Importance (Decision Tree) to begin with
     fig, ax = plt.subplots()
     disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=model.classes_)
     disp.plot(ax=ax, cmap="Blues", colorbar=False)
