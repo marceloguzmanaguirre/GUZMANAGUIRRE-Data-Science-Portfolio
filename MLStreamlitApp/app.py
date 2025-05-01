@@ -7,6 +7,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.utils.multiclass import type_of_target
+from sklearn.preprocessing import LabelEncoder
 
 # Header and a brief description of what the user should do (upload data, choose features, etc.)
 st.title("Interactive Supervised Machine Learning App 🧠")
@@ -17,9 +18,7 @@ Upload a dataset (or use the sample), choose features and a target, train a mode
 # Sidebar (inludes option for user to use sample dataset or uplod file, and a data frame)
 st.sidebar.header("Configuration 📁")
 
-sample_data = st.sidebar.checkbox("Use Sample Dataset")
-
-upload_file = st.sidebar.file_uploader("Upload your CSV dataset", type=["csv"])
+sample_data = st.sidebar.radio("Select Data Source", ["Use Sample Dataset", "Upload CSV File"])
 
 @st.cache_data
 def load_sample_data():
@@ -27,17 +26,36 @@ def load_sample_data():
     data = load_iris(as_frame=True)
     return data.frame
 
-if sample_data:
+df = None
+
+if sample_data == "Use Sample Dataset":
     df = load_sample_data()
-elif upload_file is not None:
-    try:
-        df = pd.read_csv(upload_file)
-    except Exception as e:
-        st.error(f"Error reading the CSV file: {e}")
-        st.stop()
+elif sample_data is not None:
+    uploaded_file = st.sidebar.file_uploader("Upload your CSV", type=["csv"])
+    if uploaded_file is not None:
+        try:
+            df = pd.read_csv(uploaded_file)
+            st.sidebar.success("File uploaded successfull")
+        except Exception as e:
+            st.sidebar.error(f"Error reading file")
+            st.stop()
+    else:
+        st.sidebar.warning("Upload a file to continue")
 else:
     st.warning("Please upload a CSV file or use the sample dataset.")
     st.stop()
+
+# Bugfix: preventing code from executinf if df is none
+if df is None:
+    st.warning("Please upload a CSV file or use the sample dataset")
+    st.stop()
+
+# Encoding categorical features and handling missing values
+df.dropna(inplace=True)
+
+for col in df.select_dtypes(include="object").columns:
+    df[col] = LabelEncoder().fit_transform(df[col].astype(str))
+
 
 # User is able preview the dataset
 st.subheader("Dataset Preview 🔍")
@@ -52,15 +70,16 @@ if not features:
 
 # The configuration of the train/test split
 st.sidebar.subheader("Train/Test Split 🧪")
-test_size = st.sidebar.slider("Test set proportion", 0.1, 0.5, 0.2)
+test_size = st.sidebar.slider("This slider sets the ratio of training to testing data. More training data can improve learning, while testing data checks model performance", 0.1, 0.5, 0.2)
 
 # User is prompted to select a model, either decision or logistic regression. Considering the nature of most datasets, I thought it made sense to choose log reg as the default setup for the app
 st.sidebar.subheader("Model Selection 📊")
 model_option = st.sidebar.selectbox("Choose a model", ["Decision Tree", "Logistic Regression"])
 if model_option == "Decision Tree":
-    max_depth = st.sidebar.slider("Decision Tree: Maximum Depth", 1, 20, 5)
-else:
-    st.sidebar.info("Using default Logistic Regression parameters")
+    max_depth = st.sidebar.slider("Decision Tree: Maximum Depth - controls model complexity", 1, 20, 5)
+elif model_option == "Logistic Regression":
+    max_iter = st.sidebar.slider("Select max_iter - how many times the model can update during training", 2, 1000, 100)
+
 
 # Model training. As most apps evaluated in class did not explain why certain features did not work well given the nature of the dataset provided by the user, I thought it made sense to include some kind of specification/error message here to ensure better UX. I also split, train, and evluate the model here, while sharing some output results.
 if st.button("Train Model 🚀"):
@@ -78,14 +97,14 @@ if st.button("Train Model 🚀"):
     if model_option == "Decision Tree":
         model = DecisionTreeClassifier(max_depth=max_depth, random_state=42)
     else:
-        model = LogisticRegression(max_iter=1000)
+        model = LogisticRegression(max_iter=max_iter)
 
     model.fit(X_train, y_train)
     predictions = model.predict(X_test)
 
     acc = accuracy_score(y_test, predictions)
     cm = confusion_matrix(y_test, predictions)
-    cr = classification_report(y_test, predictions)
+    cr = classification_report(y_test, predictions, zero_division=0)
 
     st.subheader("Model Performance ✅")
     st.write(f"**Accuracy:** {round(acc, 4)}")
