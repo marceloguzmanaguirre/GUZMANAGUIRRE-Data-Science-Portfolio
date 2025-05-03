@@ -38,11 +38,7 @@ ___
 
 ### 🗂️ At a Glance: Portfolio Projects  
 Click any image below to explore the project in its GitHub folder.
-
 [![NYC Air Quality Project](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/af144d96e85a7514345c61e422aba5e220ced59a/P1Updated.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/6e0ec5821fc7c8bcd1883295b26912654cf08ac2/basic_streamlit_app)
-
 [![Tidy Data Project](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/af144d96e85a7514345c61e422aba5e220ced59a/P2Updated.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/6e0ec5821fc7c8bcd1883295b26912654cf08ac2/TidyData-Project)
-
 [![Supervised ML App](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/875ec44278d0a321a312bd070bbb7d7d77d2c35c/P3Updated.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/6e0ec5821fc7c8bcd1883295b26912654cf08ac2/MLStreamlitApp)
-
 [![Unsupervised ML App](https://github.com/marceloguzmanaguirre/marceloguzmanaguirre/blob/e2c4d493e42436a611760edf290fdc56851b46ef/ProfileCurrentProjectUMLAppUpdated.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
