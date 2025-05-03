@@ -15,7 +15,7 @@ Throughout this course, I developed foundational skills in cleaning and visualiz
 
 #### 📊 Data Visualization  
 <details><summary> I used plotting libraries like **Seaborn** and **Matplotlib** to explore relationships, identify trends, and communicate findings. My visualizations emphasized: </summary>
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/476e6f36d7f5eea724cc015958f867df43c6caaf/DSPortfolioDataCleaning.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/8eade38ac4af3bc39c36eb54dd36669d7fbf046c/DSPortfolioDataVisualization.png"/>
 </details>
 
 <details><summary>
