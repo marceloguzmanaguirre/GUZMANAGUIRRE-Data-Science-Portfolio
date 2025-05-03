@@ -25,7 +25,7 @@ Across multiple projects, I applied both supervised and unsupervised learning te
 
 #### 🔹 Supervised Learning  
 <details><summary> I worked with models like Logistic Regression and Decision Trees to build classification pipelines. I gained experience in:</summary>
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/8eade38ac4af3bc39c36eb54dd36669d7fbf046c/DSPortfolioDataVisualization.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/5da16f26b2c2a442d7b899a8366b472f281d1382/DSPortfolioSupervisedLearning%20%20.png"/>
 </details>
 
 #### 🔹 Unsupervised Learning  
