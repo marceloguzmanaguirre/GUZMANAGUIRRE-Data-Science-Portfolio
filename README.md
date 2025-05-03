@@ -5,22 +5,26 @@
 
 ___
 
-### Exploratory Data Analysis 🧐  
+### 🧐 Exploratory Data Analysis 🧐  
 Throughout this course, I developed foundational skills in cleaning and visualizing real-world datasets using **Pandas**, **Regex**, and **Seaborn**. These skills were essential to preparing data for machine learning and drawing meaningful insights.
 
 #### 🧼 Data Cleaning  
 I learned to transform raw, messy datasets into tidy, structured formats that support reproducible analysis. Key techniques included:
+<details><summary>
 - Extracting information from strings using **regular expressions**
 - Reshaping datasets using `melt()` and `pivot()`
 - Handling missing values and ensuring consistent variable formatting
 - Creating new variables through **feature engineering**
+</summary></details>
 
 #### 📊 Data Visualization  
 I used plotting libraries like **Seaborn** and **Matplotlib** to explore relationships, identify trends, and communicate findings. My visualizations emphasized:
+<details><summary>
 - **Time series** and **trend analysis** with line plots and scatterplots  
 - **Distribution analysis** with KDEs, histograms, and boxplots  
 - Highlighting group-level comparisons using color and facetting  
 - Supporting insight-driven narratives through annotation and layout design
+</summary></details>
 
 <details><summary>
 Key skills – <em>Data wrangling, string parsing, feature creation, and visualization for exploration and communication</em>
@@ -33,16 +37,20 @@ Across multiple projects, I applied both supervised and unsupervised learning te
 
 #### 🔹 Supervised Learning  
 I worked with models like **Logistic Regression** and **Decision Trees** to build classification pipelines. I gained experience in:
+<details><summary>
 - Uploading and preprocessing user data  
 - Model training and prediction  
 - Performance evaluation with **confusion matrices** and **classification reports**  
 - Deploying models in interactive Streamlit apps
+</summary></details>
 
 #### 🔹 Unsupervised Learning  
 I implemented clustering and dimensionality reduction techniques to explore patterns in unlabeled data. Key methods included:
+<details><summary>
 - **KMeans** and **Hierarchical Clustering**  
 - **PCA** for reducing dimensions and improving interpretability  
 - Visualization techniques such as **elbow plots**, **dendrograms**, and **2D PCA projections**
+</summary></details>
 
 <details><summary>
 Key skills – <em>Model evaluation, clustering, dimensionality reduction, UI-driven deployment</em>
