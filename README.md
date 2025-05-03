@@ -17,13 +17,12 @@ Throughout this course, I developed foundational skills in cleaning and visualiz
 </details>
 
 #### 📊 Data Visualization  
-I used plotting libraries like **Seaborn** and **Matplotlib** to explore relationships, identify trends, and communicate findings. My visualizations emphasized:
-<details><summary>
+<details><summary> I used plotting libraries like **Seaborn** and **Matplotlib** to explore relationships, identify trends, and communicate findings. My visualizations emphasized: </summary>
 - **Time series** and **trend analysis** with line plots and scatterplots  
 - **Distribution analysis** with KDEs, histograms, and boxplots  
 - Highlighting group-level comparisons using color and facetting  
 - Supporting insight-driven narratives through annotation and layout design
-</summary></details>
+</details>
 
 <details><summary>
 Key skills – <em>Data wrangling, string parsing, feature creation, and visualization for exploration and communication</em>
