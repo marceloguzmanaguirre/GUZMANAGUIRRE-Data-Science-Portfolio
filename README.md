@@ -30,7 +30,7 @@ Across multiple projects, I applied both supervised and unsupervised learning te
 
 #### 🔹 Unsupervised Learning  
 <details><summary> I implemented clustering and dimensionality reduction techniques to explore patterns in unlabeled data. Key methods included:</summary>
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/8eade38ac4af3bc39c36eb54dd36669d7fbf046c/DSPortfolioDataVisualization.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/62b840de906c986c5bbe7e894d853964107124e1/DSPortfolioUnsupervisedLearning%20%20.png"/>
 </details>
 ___
 
