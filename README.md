@@ -35,7 +35,6 @@ Across multiple projects, I applied both supervised and unsupervised learning te
 </details>
 
 ___
-
 ### 🗂️ At a Glance: Portfolio Projects  
 Click any image below to explore the project in its GitHub folder.
 [![NYC Air Quality Project](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/af144d96e85a7514345c61e422aba5e220ced59a/P1Updated.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/6e0ec5821fc7c8bcd1883295b26912654cf08ac2/basic_streamlit_app)
