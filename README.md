@@ -6,7 +6,7 @@
 ___
 
 ### 🧐 Exploratory Data Analysis 🧐  
-Throughout this course, I developed foundational skills in cleaning and visualizing real-world datasets using Pandas, Regex and Seaborn These skills were essential to preparing data for machine learning and drawing meaningful insights. Key skills develop data wrangling, string parsing, feature creation, and visualization for exploration and communication</em>
+Throughout this course, I developed foundational skills in cleaning and visualizing real-world datasets using Pandas, Regex and Seaborn These skills were essential to preparing data for machine learning and drawing meaningful insights. Key skills developed include data wrangling, string parsing, feature creation, and visualization for exploration and communication</em>
 
 
 #### 🧼 Data Cleaning  
@@ -21,29 +21,17 @@ Throughout this course, I developed foundational skills in cleaning and visualiz
 ___
 
 ### Machine Learning 📖  
-Across multiple projects, I applied both supervised and unsupervised learning techniques using **Scikit-learn**, **Pandas**, and **Streamlit**, focusing on building user-interactive apps and interpreting model performance.
+Across multiple projects, I applied both supervised and unsupervised learning techniques using **Scikit-learn**, **Pandas**, and **Streamlit**, focusing on building user-interactive apps and interpreting model performance. Key skills developed include model evaluation, clustering, dimensionality reduction, and UI-driven deployment</em>
 
 #### 🔹 Supervised Learning  
-I worked with models like **Logistic Regression** and **Decision Trees** to build classification pipelines. I gained experience in:
-<details><summary>
-- Uploading and preprocessing user data  
-- Model training and prediction  
-- Performance evaluation with **confusion matrices** and **classification reports**  
-- Deploying models in interactive Streamlit apps
-</summary></details>
+<details><summary> I worked with models like Logistic Regression and Decision Trees to build classification pipelines. I gained experience in:</summary>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/8eade38ac4af3bc39c36eb54dd36669d7fbf046c/DSPortfolioDataVisualization.png"/>
+</details>
 
 #### 🔹 Unsupervised Learning  
-I implemented clustering and dimensionality reduction techniques to explore patterns in unlabeled data. Key methods included:
-<details><summary>
-- **KMeans** and **Hierarchical Clustering**  
-- **PCA** for reducing dimensions and improving interpretability  
-- Visualization techniques such as **elbow plots**, **dendrograms**, and **2D PCA projections**
-</summary></details>
-
-<details><summary>
-Key skills – <em>Model evaluation, clustering, dimensionality reduction, UI-driven deployment</em>
-</summary></details>
-
+<details><summary> I implemented clustering and dimensionality reduction techniques to explore patterns in unlabeled data. Key methods included:</summary>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/8eade38ac4af3bc39c36eb54dd36669d7fbf046c/DSPortfolioDataVisualization.png"/>
+</details>
 ___
 
 ## 🗂️ At a Glance: Portfolio Projects  
