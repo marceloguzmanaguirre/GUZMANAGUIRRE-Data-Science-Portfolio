@@ -10,10 +10,7 @@ Throughout this course, I developed foundational skills in cleaning and visualiz
 
 #### 🧼 Data Cleaning  
 <details><summary> I learned to transform raw, messy datasets into tidy, structured formats that support reproducible analysis. Key techniques included: </summary>
-- Extracting information from strings using **regular expressions**
-- Reshaping datasets using `melt()` and `pivot()`
-- Handling missing values and ensuring consistent variable formatting
-- Creating new variables through **feature engineering**
+<img src="  https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/476e6f36d7f5eea724cc015958f867df43c6caaf/DSPortfolioDataCleaning.png"/>
 </details>
 
 #### 📊 Data Visualization  
