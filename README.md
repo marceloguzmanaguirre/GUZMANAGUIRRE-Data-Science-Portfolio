@@ -37,14 +37,17 @@ ___
 ## 🗂️ At a Glance: Portfolio Projects  
 Click any image below to explore the project in its GitHub folder.
 
-### 🔗 [NYC Air Quality Database Explorer](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/basic_streamlit_app)
-[![NYC Air Quality Project](https://github.com/marceloguzmanaguirre/marceloguzmanaguirre/blob/main/path-to-your-image/NYC_Air_Quality_Card.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/basic_streamlit_app)
+## 🗂️ At a Glance: Portfolio Projects  
+Click any image below to explore the project in its GitHub folder.
 
-### 🔗 [Tidy Data Project](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/TidyData-Project)
-[![Tidy Data Project](https://github.com/marceloguzmanaguirre/marceloguzmanaguirre/blob/main/path-to-your-image/Tidy_Data_Card.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/TidyData-Project)
+### 🔗 [NYC Air Quality Database Explorer](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/6e0ec5821fc7c8bcd1883295b26912654cf08ac2/basic_streamlit_app)
+[![NYC Air Quality Project](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/af144d96e85a7514345c61e422aba5e220ced59a/P1Updated.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/6e0ec5821fc7c8bcd1883295b26912654cf08ac2/basic_streamlit_app)
 
-### 🔗 [Supervised ML App](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLStreamlitApp)
-[![Supervised ML App](https://github.com/marceloguzmanaguirre/marceloguzmanaguirre/blob/main/path-to-your-image/Supervised_ML_Card.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLStreamlitApp)
+### 🔗 [Tidy Data Project](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/6e0ec5821fc7c8bcd1883295b26912654cf08ac2/TidyData-Project)
+[![Tidy Data Project](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/af144d96e85a7514345c61e422aba5e220ced59a/P2Updated.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/6e0ec5821fc7c8bcd1883295b26912654cf08ac2/TidyData-Project)
+
+### 🔗 [Supervised ML App](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/6e0ec5821fc7c8bcd1883295b26912654cf08ac2/MLStreamlitApp)
+[![Supervised ML App](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/af144d96e85a7514345c61e422aba5e220ced59a/P3Updated.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/6e0ec5821fc7c8bcd1883295b26912654cf08ac2/MLStreamlitApp)
 
 ### 🔗 [Unsupervised ML App](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
-[![Unsupervised ML App](https://github.com/marceloguzmanaguirre/marceloguzmanaguirre/blob/main/path-to-your-image/Unsupervised_ML_Card.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
+[![Unsupervised ML App](https://github.com/marceloguzmanaguirre/marceloguzmanaguirre/blob/e2c4d493e42436a611760edf290fdc56851b46ef/ProfileCurrentProjectUMLAppUpdated.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
