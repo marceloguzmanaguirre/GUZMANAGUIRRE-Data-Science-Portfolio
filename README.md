@@ -28,19 +28,45 @@ Evaluation - <em>Model performance analysis</em>
 </summary></details>
 
 ___
-## 🔍 At a Glance: Portfolio Projects
+### NLP and LLMs 🤖 
+This will be my workspace for text analysis and LLM projects. I'll document my experiments with tokenization, embeddings, and prompt engineering. It'll be interesting to see how my understanding of these technologies develops over the semester.
+<details><summary>
+Text-Analysis - <em>NLP fundamentals and text processing</em>
+</summary></details>
+<details><summary>
+LLM-applications - <em>Projects using LLMs and prompt engineering</em>
+</summary></details>
 
-This section summarizes all major deliverables completed for *Introduction to Data Science* (Spring 2025), organized by update.
-
-### 🗂️ [NYC Air Quality Database Explorer](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/basic_streamlit_app)
-A basic Streamlit app (using `main.py`) that lets users filter air quality data by pollutant, location, and measurement range. My first hands-on experience with interactive data exploration.
-
-### 🗂️ [Tidy Data Project](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/TidyData-Project)
-Built in Jupyter (`FinalProject.ipynb`), this project cleans and reshapes messy federal R&D data using regex and melt operations. It includes Seaborn visualizations of temporal trends.
-
-### 🗂️ [Supervised ML App](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLStreamlitApp)
-An interactive Streamlit app (`app.py`) for training and evaluating logistic regression and decision tree models. Users can upload data, choose features, and visualize model performance.
-
-### 🗂️ [Unsupervised ML App](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
-Final project (`MLUnsupervisedApp.py`) focused on clustering and dimensionality reduction. Includes KMeans, PCA, and Hierarchical Clustering with visual tools like elbow plots and dendrograms.
 ___
+### Portfolio Updates ⏰ 
+I'll track my portfolio development here through three major updates. Each version will show my growing proficiency with interactive data applications. I'm looking forward to seeing how my apps evolve from basic visualizations to more complex integrations.
+<details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/67ff093ad6721805db77e0e6e129b28bad2384bb/basic_streamlit_app'> 
+First update (Week 4)- <em>NYC Air Quality Database Explorer</em> </a>
+</summary></details>
+<details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/TidyData-Project'>
+Second update (Week 8)- <em>Tidy Data Project</em> </a>
+</summary>
+
+What the app does & how it builds on your understanding of data science 🧠 
+  
+This project transforms raw federal R&D spending data into a tidy format and uses visualizations to analyze trends over time, reinforcing my skills in data wrangling, regex extraction, and meaningful interpretation through visual analytics.
+
+How it complements your overall portfolio 🧰
+
+It enhances my portfolio by demonstrating my ability to clean, reshape, and visualize complex datasets using Python, aligning with best practices in exploratory data analysis and reproducible research.
+
+</details>
+<details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLStreamlitApp'>
+Third update (Week 12)- <em>Machine Learning App</em> </a>
+</summary>
+
+What the app does & how it builds on your understanding of data science 🧠 
+
+This app allows users to upload a dataset, select features and a target variable, train a supervised machine learning model, and explore performance through visualizations, reinforcing my understanding of model selection, evaluation, and interpretability.
+
+How it complements your overall portfolio 🧰
+
+It complements my overall portfolio by demonstrating my ability to build interactive Python applications and deploy machine learning tools in a user-friendly, web-based format.
+
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/7.png"/>
+</details>
