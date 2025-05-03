@@ -6,7 +6,8 @@
 ___
 
 ### 🧐 Exploratory Data Analysis 🧐  
-Throughout this course, I developed foundational skills in cleaning and visualizing real-world datasets using **Pandas**, **Regex**, and **Seaborn**. These skills were essential to preparing data for machine learning and drawing meaningful insights.
+Throughout this course, I developed foundational skills in cleaning and visualizing real-world datasets using Pandas, Regex and Seaborn These skills were essential to preparing data for machine learning and drawing meaningful insights. Key skills develop data wrangling, string parsing, feature creation, and visualization for exploration and communication</em>
+
 
 #### 🧼 Data Cleaning  
 <details><summary> I learned to transform raw, messy datasets into tidy, structured formats that support reproducible analysis. Key techniques included: </summary>
@@ -17,11 +18,6 @@ Throughout this course, I developed foundational skills in cleaning and visualiz
 <details><summary> I used plotting libraries like Seaborn and Matplotlib to explore relationships, identify trends, and communicate findings. My visualizations emphasized: </summary>
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/8eade38ac4af3bc39c36eb54dd36669d7fbf046c/DSPortfolioDataVisualization.png"/>
 </details>
-
-<details><summary>
-Key skills – <em>Data wrangling, string parsing, feature creation, and visualization for exploration and communication</em>
-</summary></details>
-
 ___
 
 ### Machine Learning 📖  
