@@ -1,72 +1,66 @@
 ## This is my "Intro to Data Science" Portfolio Repository! 🧑🏻‍🔬
-<em>This repository contains projects and assignments for "Introduction to Data Science" at the University of Notre Dame (Spring 2025). The portfolio demonstrates skills in data analysis, visualization, machine learning, and ethical AI applications using Python. Also, this is where I'll keep my regular homework organized; I'm a firm believer that every assignment will help build toward my larger portfolio pieces while letting me practice specific skills.
+<em>This repository contains projects and assignments for "Introduction to Data Science" at the University of Notre Dame (Spring 2025). The portfolio demonstrates skills in data analysis, visualization, machine learning, and ethical AI applications using Python. Also, this is where I'll keep my regular homework organized; I'm a firm believer that every assignment will help build toward my larger portfolio pieces while letting me practice specific skills.</em>
 
-</em>
-  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/27ba02956e1c1a9ba0c3a0bb843f9898162285bb/Screenshot%202025-01-27%20at%2019.20.18.png"/>
-
-___
-### Exploratory Data Analysis 🧐
-I'll use this directory for all my data cleaning exercises and visualization work. I'll be practicing with Pandas and Seaborn here, storing both my raw data inputs and cleaned outputs, along with the visualization code I develop. This will be crucial for building my foundational data skills.
-<details><summary>
-Data Cleaning - <em>Data wrangling and preprocessing projects</em>
-</summary></details>
-<details><summary>
-Data Visualization - <em>EDA visualizations using Seaborn, Plotly</em>
-</summary></details>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/27ba02956e1c1a9ba0c3a0bb843f9898162285bb/Screenshot%202025-01-27%20at%2019.20.18.png"/>
 
 ___
+
+### Exploratory Data Analysis 🧐  
+Throughout this course, I developed foundational skills in cleaning and visualizing real-world datasets using **Pandas**, **Regex**, and **Seaborn**. These skills were essential to preparing data for machine learning and drawing meaningful insights.
+
+#### 🧼 Data Cleaning  
+I learned to transform raw, messy datasets into tidy, structured formats that support reproducible analysis. Key techniques included:
+- Extracting information from strings using **regular expressions**
+- Reshaping datasets using `melt()` and `pivot()`
+- Handling missing values and ensuring consistent variable formatting
+- Creating new variables through **feature engineering**
+
+#### 📊 Data Visualization  
+I used plotting libraries like **Seaborn** and **Matplotlib** to explore relationships, identify trends, and communicate findings. My visualizations emphasized:
+- **Time series** and **trend analysis** with line plots and scatterplots  
+- **Distribution analysis** with KDEs, histograms, and boxplots  
+- Highlighting group-level comparisons using color and facetting  
+- Supporting insight-driven narratives through annotation and layout design
+
+<details><summary>
+Key skills – <em>Data wrangling, string parsing, feature creation, and visualization for exploration and communication</em>
+</summary></details>
+
+___
+
 ### Machine Learning 📖  
-As I progress through supervised and unsupervised learning techniques, I'll organize my work here. I'll start with my basic regression models and build up to more complex clustering projects. Each project will include my model code, evaluation metrics, and documentation of my learning process.
+Across multiple projects, I applied both supervised and unsupervised learning techniques using **Scikit-learn**, **Pandas**, and **Streamlit**, focusing on building user-interactive apps and interpreting model performance.
+
+#### 🔹 Supervised Learning  
+I worked with models like **Logistic Regression** and **Decision Trees** to build classification pipelines. I gained experience in:
+- Uploading and preprocessing user data  
+- Model training and prediction  
+- Performance evaluation with **confusion matrices** and **classification reports**  
+- Deploying models in interactive Streamlit apps
+
+#### 🔹 Unsupervised Learning  
+I implemented clustering and dimensionality reduction techniques to explore patterns in unlabeled data. Key methods included:
+- **KMeans** and **Hierarchical Clustering**  
+- **PCA** for reducing dimensions and improving interpretability  
+- Visualization techniques such as **elbow plots**, **dendrograms**, and **2D PCA projections**
+
 <details><summary>
-Supervise - <em>Regression and classification projects</em>
-</summary></details>
-<details><summary>
-Unsupervised - <em>Clustering and dimensionality reduction</em>
-</summary></details>
-<details><summary>
-Evaluation - <em>Model performance analysis</em>
+Key skills – <em>Model evaluation, clustering, dimensionality reduction, UI-driven deployment</em>
 </summary></details>
 
 ___
-### NLP and LLMs 🤖 
-This will be my workspace for text analysis and LLM projects. I'll document my experiments with tokenization, embeddings, and prompt engineering. It'll be interesting to see how my understanding of these technologies develops over the semester.
-<details><summary>
-Text-Analysis - <em>NLP fundamentals and text processing</em>
-</summary></details>
-<details><summary>
-LLM-applications - <em>Projects using LLMs and prompt engineering</em>
-</summary></details>
 
-___
-### Portfolio Updates ⏰ 
-I'll track my portfolio development here through three major updates. Each version will show my growing proficiency with interactive data applications. I'm looking forward to seeing how my apps evolve from basic visualizations to more complex integrations.
-<details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/67ff093ad6721805db77e0e6e129b28bad2384bb/basic_streamlit_app'> 
-First update (Week 4)- <em>NYC Air Quality Database Explorer</em> </a>
-</summary></details>
-<details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/TidyData-Project'>
-Second update (Week 8)- <em>Tidy Data Project</em> </a>
-</summary>
+## 🗂️ At a Glance: Portfolio Projects  
+Click any image below to explore the project in its GitHub folder.
 
-What the app does & how it builds on your understanding of data science 🧠 
-  
-This project transforms raw federal R&D spending data into a tidy format and uses visualizations to analyze trends over time, reinforcing my skills in data wrangling, regex extraction, and meaningful interpretation through visual analytics.
+### 🔗 [NYC Air Quality Database Explorer](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/basic_streamlit_app)
+[![NYC Air Quality Project](https://github.com/marceloguzmanaguirre/marceloguzmanaguirre/blob/main/path-to-your-image/NYC_Air_Quality_Card.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/basic_streamlit_app)
 
-How it complements your overall portfolio 🧰
+### 🔗 [Tidy Data Project](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/TidyData-Project)
+[![Tidy Data Project](https://github.com/marceloguzmanaguirre/marceloguzmanaguirre/blob/main/path-to-your-image/Tidy_Data_Card.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/TidyData-Project)
 
-It enhances my portfolio by demonstrating my ability to clean, reshape, and visualize complex datasets using Python, aligning with best practices in exploratory data analysis and reproducible research.
+### 🔗 [Supervised ML App](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLStreamlitApp)
+[![Supervised ML App](https://github.com/marceloguzmanaguirre/marceloguzmanaguirre/blob/main/path-to-your-image/Supervised_ML_Card.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLStreamlitApp)
 
-</details>
-<details><summary><a href='https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLStreamlitApp'>
-Third update (Week 12)- <em>Machine Learning App</em> </a>
-</summary>
-
-What the app does & how it builds on your understanding of data science 🧠 
-
-This app allows users to upload a dataset, select features and a target variable, train a supervised machine learning model, and explore performance through visualizations, reinforcing my understanding of model selection, evaluation, and interpretability.
-
-How it complements your overall portfolio 🧰
-
-It complements my overall portfolio by demonstrating my ability to build interactive Python applications and deploy machine learning tools in a user-friendly, web-based format.
-
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/7.png"/>
-</details>
+### 🔗 [Unsupervised ML App](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
+[![Unsupervised ML App](https://github.com/marceloguzmanaguirre/marceloguzmanaguirre/blob/main/path-to-your-image/Unsupervised_ML_Card.png)](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
