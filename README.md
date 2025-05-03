@@ -18,6 +18,7 @@ Throughout this course, I developed foundational skills in cleaning and visualiz
 <details><summary> I used plotting libraries like Seaborn and Matplotlib to explore relationships, identify trends, and communicate findings. My visualizations emphasized: </summary>
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/8eade38ac4af3bc39c36eb54dd36669d7fbf046c/DSPortfolioDataVisualization.png"/>
 </details>
+
 ___
 
 ### Machine Learning 📖  
@@ -32,6 +33,7 @@ Across multiple projects, I applied both supervised and unsupervised learning te
 <details><summary> I implemented clustering and dimensionality reduction techniques to explore patterns in unlabeled data. Key methods included:</summary>
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/62b840de906c986c5bbe7e894d853964107124e1/DSPortfolioUnsupervisedLearning%20%20.png"/>
 </details>
+
 ___
 
 ### 🗂️ At a Glance: Portfolio Projects  
