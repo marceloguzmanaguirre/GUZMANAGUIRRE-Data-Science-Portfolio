@@ -3,6 +3,7 @@
 
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio-/blob/27ba02956e1c1a9ba0c3a0bb843f9898162285bb/Screenshot%202025-01-27%20at%2019.20.18.png"/>
 ___
+
 ### 🧐 Exploratory Data Analysis 🧐  
 Throughout this course, I developed foundational skills in cleaning and visualizing real-world datasets using Pandas, Regex and Seaborn These skills were essential to preparing data for machine learning and drawing meaningful insights. Key skills developed include data wrangling, string parsing, feature creation, and visualization for exploration and communication</em>
 
@@ -15,7 +16,9 @@ Throughout this course, I developed foundational skills in cleaning and visualiz
 <details><summary> I used plotting libraries like Seaborn and Matplotlib to explore relationships, identify trends, and communicate findings. My visualizations emphasized: </summary>
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/8eade38ac4af3bc39c36eb54dd36669d7fbf046c/DSPortfolioDataVisualization.png"/>
 </details>
+
 ___
+
 ### Machine Learning 📖  
 Across multiple projects, I applied both supervised and unsupervised learning techniques using **Scikit-learn**, **Pandas**, and **Streamlit**, focusing on building user-interactive apps and interpreting model performance. Key skills developed include model evaluation, clustering, dimensionality reduction, and UI-driven deployment</em>
 
