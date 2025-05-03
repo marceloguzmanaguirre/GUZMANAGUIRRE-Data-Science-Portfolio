@@ -9,13 +9,12 @@ ___
 Throughout this course, I developed foundational skills in cleaning and visualizing real-world datasets using **Pandas**, **Regex**, and **Seaborn**. These skills were essential to preparing data for machine learning and drawing meaningful insights.
 
 #### 🧼 Data Cleaning  
-I learned to transform raw, messy datasets into tidy, structured formats that support reproducible analysis. Key techniques included:
-<details><summary>
+<details><summary> I learned to transform raw, messy datasets into tidy, structured formats that support reproducible analysis. Key techniques included: </summary>
 - Extracting information from strings using **regular expressions**
 - Reshaping datasets using `melt()` and `pivot()`
 - Handling missing values and ensuring consistent variable formatting
 - Creating new variables through **feature engineering**
-</summary></details>
+</details>
 
 #### 📊 Data Visualization  
 I used plotting libraries like **Seaborn** and **Matplotlib** to explore relationships, identify trends, and communicate findings. My visualizations emphasized:
