@@ -6,7 +6,6 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.cluster import AgglomerativeClustering
@@ -38,17 +37,20 @@ if len(features) < 2:
     st.warning("Select at least 2 features.")
     st.stop()
 
-X = df[features].select_dtypes(include=[np.number])
+X = df[features]
 
-# Preprocessing data 
+# Preprocessing data - Allows for categorical data
+
+X = pd.get_dummies(X, drop_first=True)
+X = X.dropna()
+
+if X.empty:
+    st.error("Selected features result in an empty dataset after encoding. Please choose valid features.")
+    st.stop()
+
 X = X.dropna()
 X_scaled = StandardScaler().fit_transform(X)
 
-
-# Model selection and training
-st.sidebar.header("🚆 Train/Test Split 🧪")
-split_ratio = st.sidebar.slider("Train size (%)", 50, 95, 80)
-X_train, X_test = train_test_split(X_scaled, train_size=split_ratio / 100, random_state=42)
 
 st.sidebar.header("🧠 Model & Hyperparameters 🎚️")
 model_type = st.sidebar.selectbox("Choose model", ["KMeans", "PCA", "Hierarchical Clustering"])
@@ -64,20 +66,28 @@ if model_type == "KMeans":
 
     if train_button:
         # Fit User's selected model with K clusters
-        model = KMeans(n_clusters=k, random_state=42).fit(X_train)
-        labels = model.predict(X_test)
+        model = KMeans(n_clusters=k, random_state=42).fit(X_scaled)
+        labels = model.predict(X_scaled)
         st.caption(f"Kmeans completed with {k} clusters.")
-        silhouette = silhouette_score(X_test, labels)
+        silhouette = silhouette_score(X_scaled, labels)
         st.success(f"Silhouette Score: `{silhouette:.3f}`")
         
         # Find eblow plot values for each k until max_clusters
         sse = []
         for i in range(2, max_clusters + 1):
-            km = KMeans(n_clusters=i, random_state=42).fit(X_train)
+            km = KMeans(n_clusters=i, random_state=42).fit(X_scaled)
             sse.append(km.inertia_)
 
         # Plot the elbow k-means values
         st.subheader("📈 Elbow Method")
+        st.expander("Elbow Method", expanded=True).markdown(
+            """
+            The elbow plot is used to find the optimal number of clusters for KMeans. In order to find the optimal number of clusters, 
+            we look for the point where the inertia (sum of squared distances to the nearest cluster center) starts to decrease at a slower rate. 
+            In simple terms, choose the "k" where the elbow plot shows a sharp bend. After this point, adding more clusters doesn't improve the results.
+            """
+        )
+        
         fig, ax = plt.subplots(figsize=(13,5))
         ax.plot(range(2, max_clusters + 1), sse, marker='o')
         ax.set_title("Elbow Plot")
@@ -87,8 +97,14 @@ if model_type == "KMeans":
 
         # Visualize using 2 PCA Projection
         st.subheader("📊 PCA Visualization")
+        st.expander("PCA Visualization", expanded=True).markdown(
+            """
+            PCA (Principal Component Analysis) reduces data dimensionality while retaining the most significant variance. 
+            This graph shows the clusters formed by KMeans in a 2D space using PCA.
+            """
+        )
         pca = PCA(n_components=2)
-        X_pca = pca.fit_transform(X_test)
+        X_pca = pca.fit_transform(X_scaled)
         df_vis = pd.DataFrame(X_pca, columns=["PC1", "PC2"])
         df_vis["Cluster"] = labels
 
@@ -104,14 +120,22 @@ elif model_type == "Hierarchical Clustering":
     if train_button:
         # Use agglomerative clustering with K clusters
         model = AgglomerativeClustering(n_clusters=k)
-        labels = model.fit_predict(X_test)
+        labels = model.fit_predict(X_scaled)
         st.caption(f"Hierarchical Clustering done with {k} clusters.")
-        score = silhouette_score(X_test, labels)
+        score = silhouette_score(X_scaled, labels)
         st.success(f"Silhouette Score: `{score:.3f}`")
 
         # Visualize 2 PCA Projection
+        st.subheader("📊 PCA Visualization")
+        st.expander("PCA Visualization", expanded=True).markdown(
+            """
+            PCA (Principal Component Analysis) reduces data dimensionality while retaining the most significant variance. 
+            This graph shows the clusters formed by KMeans in a 2D space using PCA.
+            """
+        )
+
         pca = PCA(n_components=2)
-        X_pca = pca.fit_transform(X_test)
+        X_pca = pca.fit_transform(X_scaled)
         df_vis = pd.DataFrame(X_pca, columns=["PC1", "PC2"])
         df_vis["Cluster"] = labels
 
@@ -121,8 +145,14 @@ elif model_type == "Hierarchical Clustering":
         st.pyplot(fig4)
 
         # Dendrogram
-        st.subheader("🧬 Dendrogram")
-        linked = linkage(X_test, 'ward')
+        st.subheader("👑 Dendrogram")
+        st.expander("Dendrogram Explanation", expanded=True).markdown(
+            """
+            A dendrogram visualizes the hierarchy of clusters formed by hierarchical clustering. 
+            It shows how data points are merged step-by-step, with the height indicating the similarity level between clusters.
+            """
+        )
+        linked = linkage(X_scaled, 'ward')
         fig5, ax5 = plt.subplots(figsize=(13, 5))
         dendrogram(linked, truncate_mode="lastp", p=20, leaf_font_size=10, ax=ax5)
         ax5.set_title("Hierarchical Clustering Dendrogram")
@@ -137,10 +167,17 @@ elif model_type == "PCA":
         # Fit PCA
         st.caption(f"PCA completed with {n_components} components.")
         pca = PCA(n_components=n_components)
-        X_pca = pca.fit_transform(X_train)
+        X_pca = pca.fit_transform(X_scaled)
         explained_var = pca.explained_variance_ratio_
-
+        
         # Plot explained variance
+        st.subheader("📈 Explained Variance")
+        st.expander("Explained Variance", expanded=True).markdown(
+            """
+            Explained variance shows how much information each principal component captures from the data. 
+            This bar chart helps you understand how the  contribute tcomponentso the overall variance.
+            """
+        )
         fig3, ax3 = plt.subplots(figsize=(13,5))
         ax3.bar(range(1, n_components + 1), explained_var * 100)
         ax3.set_title("Explained Variance by Component")
@@ -148,5 +185,13 @@ elif model_type == "PCA":
         ax3.set_ylabel("Variance (%)")
         st.pyplot(fig3)
 
+        # Show PCA output
+        st.subheader("📊 PCA Output")
+        st.expander("PCA Table", expanded=True).markdown(
+            """
+            This table shows the transformed data after applying PCA. Each row represents a sample, and each column represents a principal component.
+            The values indicate the projection of the original data onto the principal components.
+            """
+        )
         st.write("PCA Output (first 5 rows):")
         st.dataframe(pd.DataFrame(X_pca, columns=[f"PC{i+1}" for i in range(n_components)]).head())
