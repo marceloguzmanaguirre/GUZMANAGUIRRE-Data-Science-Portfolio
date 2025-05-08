@@ -49,10 +49,10 @@ ___
 
 ### Technologies Used 🛠️ 
 
-<details><summary>Python - <em>Core programming language</em></summary></details>
-<details><summary>Pandas - <em>Data manipulation and analysis</em></summary></details>
-<details><summary>Matplotlib/Seaborn - <em>Data visualization</em></summary></details>
-<details><summary>Jupyter Notebook - <em>Interactive coding environment</em></summary></details>
+- Python - <em>Core programming language</em></summary></details>
+- Pandas - <em>Data manipulation and analysis</em></summary></details>
+- Matplotlib/Seaborn - <em>Data visualization</em></summary></details>
+- Jupyter Notebook - <em>Interactive coding environment</em></summary></details>
 
 ___
 
