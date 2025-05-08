@@ -1,6 +1,6 @@
 ## Unsupervised Machine Learning App 🧠
 
-<em>This repository contains my interactive unsupervised machine learning application, developed using Python and Streamlit, as part of the "Introduction to Data Science" course at the University of Notre Dame (Spring 2025). This app allows users to explore unlabeled data through clustering algorithms and dimensionality reduction techniques, with interactive visualizations and parameter tuning capabilities. The project demonstrates core concepts in unsupervised learning, data exploration, and intuitive user interface design.</em>
+<em>This folder contains my interactive unsupervised machine learning application, developed using Python and Streamlit, as part of the "Introduction to Data Science" final project at the University of Notre Dame (Spring 2025). This app allows users to explore unlabeled data through clustering algorithms and dimensionality reduction techniques, with interactive visualizations and parameter tuning capabilities. The project demonstrates core concepts in unsupervised learning, data exploration, and intuitive user interface design.</em>
 
 ___
 
