@@ -23,5 +23,5 @@ ___
 
 ___
 
-##Getting Started
+## Getting Started
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/c4b4be93f6eaa6b39bce4c713b131a1c5c20a7ec/basic_streamlit_app/NYCGettingStarted.png"/>
