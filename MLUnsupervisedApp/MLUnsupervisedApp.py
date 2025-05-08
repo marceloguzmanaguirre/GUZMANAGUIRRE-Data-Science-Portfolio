@@ -17,7 +17,7 @@ st.title("Unsupervised Machine Learning App")
 st.sidebar.header("📁 Data Source")
 data_option = st.sidebar.radio("Choose data source:", ["Sample Iris Dataset", "Upload CSV"])
 
-# Load data
+# If the user chooses "Upload CSV," it displays a file uploader in the sidebar that accepts CSV files. When a file is uploaded, it reads the data into a pandas DataFrame; if no file is uploaded, it stops execution. If another data option is selected, it loads the built-in Iris dataset and converts it to a DataFrame with appropriate column names from the original feature name
 if data_option == "Upload CSV":
     uploaded_file = st.sidebar.file_uploader("Upload your CSV", type=["csv"])
     if uploaded_file:
@@ -31,7 +31,7 @@ else:
 st.subheader("📄 Dataset Preview")
 st.write(df.sample(10))
 
-# Feature selection
+# I've added a feature selection interface that lets you pick which columns you want to include in your analysis. I used a multiselect dropdown that's initially populated with all the columns from your DataFrame. If user selects fewer than two features, app will show them a warning message and stop execution - this ensures user has enough data to perform a meaningful analysis before moving forward with the app
 features = st.multiselect("Select features", df.columns.tolist(), default=df.columns.tolist())
 if len(features) < 2:
     st.warning("Select at least 2 features.")
@@ -40,6 +40,9 @@ if len(features) < 2:
 X = df[features]
 
 # Preprocessing data - Allows for categorical data
+# I included code to prepare user data for modeling. First, I convert any categorical features into numeric ones using one-hot encoding with pd.get_dummies(), and I drop the first category to avoid multicollinearity. Then I remove any rows with missing values
+# I added a safety check to make sure user's dataset isn't empty after these operations. If it is, it'll show them an error message and stop execution so user can select different features
+# After cleaning the data, I standardize all features using StandardScaler() to ensure they're on the same scale. This is important for many machine learning algorithms, especially those that rely on distances between data points or regularization
 
 X = pd.get_dummies(X, drop_first=True)
 X = X.dropna()
@@ -51,14 +54,15 @@ if X.empty:
 X = X.dropna()
 X_scaled = StandardScaler().fit_transform(X)
 
-
+# My app provides an intuitive sidebar interface with a brain emoji header where you can select your preferred unsupervised learning algorithm from three options (KMeans, PCA, or Hierarchical Clustering)
 st.sidebar.header("🧠 Model & Hyperparameters 🎚️")
 model_type = st.sidebar.selectbox("Choose model", ["KMeans", "PCA", "Hierarchical Clustering"])
 train_button = st.button("🚀 Train Model")
 
 if model_type == "KMeans":
     st.subheader("🐑 KMeans Clustering")
-
+    
+    # I added a subheader and slider for setting the maximum number of clusters to test in the Elbow Method, allowing user to explore optimal clustering from 3 to 20 groups. I created another subheader with a slider that lets user directly choose how many clusters KMeans will use to divide your data, ranging from 2 up to your selected maximum.
     st.sidebar.subheader("Max Clusters for Elbow plot")
     max_clusters = st.sidebar.slider("Sets the upper limit of clusters to test for optimal k in the Elbow Method", 3, 20, 6)
     st.sidebar.subheader("Max Clusters for KMeans")
@@ -88,6 +92,7 @@ if model_type == "KMeans":
             """
         )
         
+        # I create a wide figure with  Elbow Plot showing how the sum of squared distances (inertia) changes as  number of clusters increases, helping user visually identify the optimal point where adding more clusters provides diminishing returns.
         fig, ax = plt.subplots(figsize=(13,5))
         ax.plot(range(2, max_clusters + 1), sse, marker='o')
         ax.set_title("Elbow Plot")
@@ -103,11 +108,14 @@ if model_type == "KMeans":
             This graph shows the clusters formed by KMeans in a 2D space using PCA.
             """
         )
+        
+        # I reduce the dimensionality of your standardized data to two principal components using PCA, coverting the transformed data into a DataFrame with labeled columns for easier handling, and adds the cluster assignments as a third column to prepare for visualization of how user data naturally groups
         pca = PCA(n_components=2)
         X_pca = pca.fit_transform(X_scaled)
         df_vis = pd.DataFrame(X_pca, columns=["PC1", "PC2"])
         df_vis["Cluster"] = labels
-
+        
+        # App creates a wide figure (13×5) and set up an axis for plotting. Using seaborn's scatterplot function, I visualize the PCA-transformed data with PC1 on the x-axis, PC2 on the y-axis, and color-code points by their cluster assignments using the Set2 color palette. I display the finished visualization
         fig2, ax2 = plt.subplots(figsize=(13,5))
         sns.scatterplot(data=df_vis, x="PC1", y="PC2", hue="Cluster", palette="Set2", ax=ax2)
         ax2.set_title("Clusters (PCA)")
@@ -133,18 +141,20 @@ elif model_type == "Hierarchical Clustering":
             This graph shows the clusters formed by KMeans in a 2D space using PCA.
             """
         )
-
+        
+        # I apply Principal Component Analysis to reduce user's standardized data to two dimensions, transform the results into a DataFrame with columns labeled "PC1" and "PC2", and add a "Cluster" column containing user's model's cluster assignments to prepare for visualizatio
         pca = PCA(n_components=2)
         X_pca = pca.fit_transform(X_scaled)
         df_vis = pd.DataFrame(X_pca, columns=["PC1", "PC2"])
         df_vis["Cluster"] = labels
 
+        # I create a wide scatter plot that visualizes your clustering results by showing the data points projected onto the first two principal components, with different colors representing each cluster assignment
         fig4, ax4 = plt.subplots(figsize=(13, 5))
         sns.scatterplot(data=df_vis, x="PC1", y="PC2", hue="Cluster", palette="Set1", ax=ax4)
         ax4.set_title("Hierarchical Clustering (PCA Projection)")
         st.pyplot(fig4)
 
-        # Dendrogram
+        # I add a section for the dendrogram, include an expanded explanation of what dendrograms show in hierarchical clustering, then generate the visualization using Ward's method to display how your data points merge into clusters, with the height representing similarity levels and limiting display to the last 20 merge steps for clarit
         st.subheader("👑 Dendrogram")
         st.expander("Dendrogram Explanation", expanded=True).markdown(
             """
@@ -164,7 +174,7 @@ elif model_type == "PCA":
     n_components = st.sidebar.slider("Sets how many principal components to keep, reducing data while preserving most variance", 2, min(len(features), 5), 2)
 
     if train_button:
-        # Fit PCA
+        # App displays a confirmation message showing the number of principal components user selected, fit a PCA model to standardized data using that specification, transform the data into the new lower-dimensional space, and calculate the percentage of variance explained by each principal component for further analysis
         st.caption(f"PCA completed with {n_components} components.")
         pca = PCA(n_components=n_components)
         X_pca = pca.fit_transform(X_scaled)
