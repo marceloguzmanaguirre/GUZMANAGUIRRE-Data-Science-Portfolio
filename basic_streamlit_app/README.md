@@ -20,7 +20,8 @@ ___
 "Air pollution is one of the most important environmental threats to urban populations and while all people are exposed, pollutant emissions, levels of exposure, and population vulnerability vary across neighborhoods. Exposures to common air pollutants have been linked to respiratory and cardiovascular diseases, cancers, and premature deaths." - United States Government's open data site
 ___
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/c4b4be93f6eaa6b39bce4c713b131a1c5c20a7ec/basic_streamlit_app/NYCRequirements.png"/>
-___
-## Getting Started
 
+___
+
+##Getting Started
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/c4b4be93f6eaa6b39bce4c713b131a1c5c20a7ec/basic_streamlit_app/NYCGettingStarted.png"/>
