@@ -23,7 +23,7 @@ To run this app locally:
 3. Run the Streamlit app (streamlit run unsupervised_app.py)
 4. Alternatively, view the deployed version here:
 
-➡️ [Live Streamlit App](https://guzmanaguirre-data-science-portfolio-unsupervised-ml-app.streamlit.app/)
+➡️ [Live Streamlit App](https://guzmanaguirre-data-science-portfolio-aagdcxm22d9e7kclumhtgr.streamlit.app/)
 
 ___
 
