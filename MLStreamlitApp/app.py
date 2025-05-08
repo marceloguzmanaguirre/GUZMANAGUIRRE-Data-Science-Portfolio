@@ -87,14 +87,17 @@ if st.button("Train Model 🚀"):
     X = df[features]
     y = df[target]
 
+    # This code validates that the target variable is appropriate for classification tasks by checking if it's binary or multiclass, showing an error message and stopping execution if the user has selected an incompatible target type like continuous data
     if model_option in ["Decision Tree", "Logistic Regression"]:
         target_type = type_of_target(y)
         if target_type not in ["binary", "multiclass"]:
             st.error("❗ For classification, choose a categorical target (e.g., species/class labels).")
             st.stop()
 
+    # This line splits the data into training and testing sets using the user-specified test size ratio, with a fixed random seed (42) to ensure results are reproducible across different runs
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=42)
 
+    # Based on the user's selection, this code creates either a Decision Tree model with customized maximum depth or a Logistic Regression model with specified maximum iterations, both using consistent randomization for reproducibility
     if model_option == "Decision Tree":
         model = DecisionTreeClassifier(max_depth=max_depth, random_state=42)
     else:
@@ -103,10 +106,12 @@ if st.button("Train Model 🚀"):
     model.fit(X_train, y_train)
     predictions = model.predict(X_test)
 
+    # I create three new variables to store different performance metrics: "acc" for accuracy score, "cm" for the confusion matrix array, and "cr" for the detailed classification report string containing precision, recall, and F1-scores
     acc = accuracy_score(y_test, predictions)
     cm = confusion_matrix(y_test, predictions)
     cr = classification_report(y_test, predictions, zero_division=0)
 
+    # I display a "Model Performance" section with a checkmark emoji, showing the rounded accuracy score in bold text and the full classification report in a pre-formatted text block for easy reading
     st.subheader("Model Performance ✅")
     st.write(f"**Accuracy:** {round(acc, 4)}")
     st.text("Classification Report:\n" + cr)
@@ -128,6 +133,7 @@ if st.button("Train Model 🚀"):
             'Importance': importances
         }).sort_values(by='Importance', ascending=False)
 
+        # I create a horizontal bar chart using seaborn, displaying features sorted by their importance values, with a bold title and labeled axes, then render this visualization in the Streamlit app to help users understand which features most influence the model's decisions
         fig, ax = plt.subplots(figsize=(8, 4))
         sns.barplot(data=importance_df, x='Importance', y='Feature', ax=ax)
         ax.set_title("Decision Tree Feature Importance", fontsize=14, fontweight='bold')
