@@ -8,7 +8,7 @@ ___
 
 The goal of this project is to provide an intuitive and visual platform for exploring unsupervised machine learning techniques. The app supports KMeans clustering, Hierarchical Clustering, and Principal Component Analysis.
 
-![Project Overview](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLUnsupervisedApp/app_overview.png)
+![Project Overview](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/37f000191e153fa33b884de303228bffb510accf/MLUnsupervisedApp/MLUScreenshot.png)
 
 This project enhances my understanding of pattern recognition, clustering algorithms, and dimensionality reduction techniques while developing interactive data science applications.
 
@@ -27,50 +27,29 @@ To run this app locally:
 
 ___
 
-### App Features ⚙️
-
-- **Data Source Options:**
-  - Use the built-in Iris dataset for exploration
-  - Upload your own CSV file for custom analysis
-  
-- **Unsupervised Models:**
-  - KMeans Clustering: Automatically identifies optimal cluster count with elbow plot
-  - Hierarchical Clustering: Visualizes data grouping with dendrogram analysis
-  - Principal Component Analysis: Reduces dimensionality while preserving variance
-
-- **User Controls:**
-  - Select specific features for analysis
-  - Adjust number of clusters or components via sliders
-  - Interactive model training with performance metrics
-  
-- **Advanced Preprocessing:**
-  - Automatic handling of categorical features
-  - Data standardization for algorithm optimization
-  - Missing value detection and handling
-
-![App Features](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLUnsupervisedApp/app_features.png)
+![App Features](https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/37f000191e153fa33b884de303228bffb510accf/MLUnsupervisedApp/MLUFeatures.png)
 
 ___
 
 ### Data Visualizations 📊
 
 <details><summary>KMeans Clustering - Elbow Plot</summary>
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLUnsupervisedApp/kmeans_elbow.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/37f000191e153fa33b884de303228bffb510accf/MLUnsupervisedApp/MLUElbow.png"/>
 This plot helps identify the optimal number of clusters by showing the point where adding more clusters provides diminishing returns. The "elbow" in the curve represents the ideal balance between simplicity and accuracy.
 </details>
 
 <details><summary>PCA-Based Cluster Visualization</summary>
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLUnsupervisedApp/pca_visualization.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/37f000191e153fa33b884de303228bffb510accf/MLUnsupervisedApp/MLUPCA.png"/>
 This scatterplot shows the clustering results projected onto the first two principal components, making it possible to visualize high-dimensional clusters in a 2D space. Different colors represent distinct clusters identified by the algorithm.
 </details>
 
 <details><summary>Hierarchical Clustering Dendrogram</summary>
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLUnsupervisedApp/dendrogram.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/37f000191e153fa33b884de303228bffb510accf/MLUnsupervisedApp/MLUDendogram.png"/>
 The dendrogram visualizes the hierarchical relationship between clusters, showing how data points are grouped together at different similarity levels. The height of each branch represents the distance between merged clusters.
 </details>
 
 <details><summary>PCA Explained Variance</summary>
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLUnsupervisedApp/pca_variance.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/37f000191e153fa33b884de303228bffb510accf/MLUnsupervisedApp/MLUVariance.png"/>
 This bar chart illustrates how much information each principal component captures, helping users understand how effectively the dimensionality reduction preserves the original data's structure and variance.
 </details>
 
