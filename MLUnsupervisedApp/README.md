@@ -74,15 +74,7 @@ The app implements a responsive design that guides users through the unsupervise
 
 ___
 
-### Learning Outcomes 🎓
-
-Building this application strengthened my skills in:
-
-- Implementing various unsupervised learning techniques
-- Creating intuitive user interfaces for data science applications
-- Visualizing high-dimensional data through dimensionality reduction
-- Interpreting clustering results through appropriate metrics
-- Handling data preprocessing challenges automatically
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/201831ead0d322ef8bfb941e5faaf754cc82bc36/MLUnsupervisedApp/MLULearningOutcomes.png"/>
 
 ___
 
