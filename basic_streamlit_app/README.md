@@ -3,9 +3,11 @@
 ## Overview
 This interactive web application provides a user-friendly interface to explore and analyze New York City's air quality data. Built with Streamlit and Pandas, it offers comprehensive filtering capabilities to help users understand air quality measurements across different locations and time periods.
 ___
+
 ## Features
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/c4b4be93f6eaa6b39bce4c713b131a1c5c20a7ec/basic_streamlit_app/NYCFeatures.png"/>
 ___
+
 ## How to Use
 1. **Select Air Quality Indicator**: Choose a specific type of measurement or view all indicators
 2. **Choose Location**: Filter data by specific NYC locations
@@ -19,4 +21,4 @@ ___
 <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/c4b4be93f6eaa6b39bce4c713b131a1c5c20a7ec/basic_streamlit_app/NYCRequirements.png"/>
 ___
 ## Getting Started
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/c4b4be93f6eaa6b39bce4c713b131a1c5c20a7ec/basic_streamlit_app/NYCGettingStarted.png"/
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/c4b4be93f6eaa6b39bce4c713b131a1c5c20a7ec/basic_streamlit_app/NYCGettingStarted.png"/>
