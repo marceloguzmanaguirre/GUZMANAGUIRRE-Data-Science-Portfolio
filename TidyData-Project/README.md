@@ -6,9 +6,9 @@ ___
 
 ### Project Overview 🔍 
 
-  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a246505b737d915e84ff29a49ec6351a7334cd96/TidyData-Project/Screenshot%202025-03-17%20at%2023.50.14.png"/>
+  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/8ecf91aeeca2d8947cb82d49caf40e650b7b02b9/TidyData-Project/TidyDataProjectGoals.png"/>
 
-  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/34ca62bcc627964dadc92ec572c02e11397ce4b4/TidyData-Project/Screenshot%202025-03-18%20at%2000.08.26.png"/>
+  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/8ecf91aeeca2d8947cb82d49caf40e650b7b02b9/TidyData-Project/TidyDataProjectPrinciplesApplied.png"/>
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 ### Dataset 🔍
 
-  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/77dfed97e6f5711d9cbbbc9a713f9d7b5bdcb105/TidyData-Project/Screenshot%202025-03-18%20at%2000.26.50.png"/>
+  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/8ecf91aeeca2d8947cb82d49caf40e650b7b02b9/TidyData-Project/TidyDataProjectDatasetContains.png"/>
 
 ___
 
@@ -58,14 +58,14 @@ ___
 
 ### Key Visualization Examples 📸 
 
-Line graph
-  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.08.png"/>
+<details><summary>Line graph</summary>
+  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.08.png"/></details>
 
-Bar chart
-  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.16.png"/>
+<details><summary>Bar chart</summary>
+  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.16.png"/></details>
 
-Heat map
-  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.32.png"/>
+<details><summary>Heat map</summary>
+  <img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/a5dba0cf810969eb76722ffcb603889faeea8876/TidyData-Project/Screenshot%202025-03-18%20at%2000.29.32.png"/></details>
 
 ___
 
