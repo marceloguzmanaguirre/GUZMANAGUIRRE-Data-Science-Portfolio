@@ -4,7 +4,7 @@ ___
 ### Project Overview 🧑🏻
 The goal of this project is to provide an interactive and visual experience for supervised machine learning. The app supports both Decision Tree and Logistic Regression classifiers. 
 
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/1.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/22bc474b53ad5ae78828ef346b1f903642809ddb/MLStreamlitApp/MLStreamlitUsersCan.png"/>
 
 This project strengthens my understanding of data preprocessing, modeling, and interactive app development with Streamlit.
 
@@ -29,7 +29,7 @@ ___
 - **Error Handling:**
   - Ensures target variable is categorical when using classifiers
  
-<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/main/MLStreamlitApp/2.png"/>
+<img src="https://github.com/marceloguzmanaguirre/GUZMANAGUIRRE-Data-Science-Portfolio/blob/22bc474b53ad5ae78828ef346b1f903642809ddb/MLStreamlitApp/MLStreamlitLibraries.png"/>
 
 ___
 ### Data Visualizations 📊
