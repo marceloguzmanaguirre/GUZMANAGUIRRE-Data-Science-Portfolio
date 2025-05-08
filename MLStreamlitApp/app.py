@@ -20,6 +20,7 @@ st.sidebar.header("Configuration 📁")
 
 sample_data = st.sidebar.radio("Select Data Source", ["Use Sample Dataset", "Upload CSV File"])
 
+# Here, the @st.cache_data decorator efficiently caches the Iris dataset to improve app performance by loading it only once. The load_sample_data() function imports the classic Iris flower dataset from scikit-learn, converts it to a pandas DataFrame format, and returns it for use in the Streamlit app
 @st.cache_data
 def load_sample_data():
     from sklearn.datasets import load_iris
@@ -28,6 +29,7 @@ def load_sample_data():
 
 df = None
 
+# This code handles data loading based on user choice: if the user selects "Use Sample Dataset," it loads the cached Iris dataset; otherwise, it prompts the user to upload a CSV file, loads it if provided, and displays appropriate success/error messages. If no data source is available, it warns the user and stops execution
 if sample_data == "Use Sample Dataset":
     df = load_sample_data()
 elif sample_data is not None:
@@ -81,7 +83,7 @@ elif model_option == "Logistic Regression":
     max_iter = st.sidebar.slider("Select max_iter - how many times the model can update during training", 2, 1000, 100)
 
 
-# Model training. As most apps evaluated in class did not explain why certain features did not work well given the nature of the dataset provided by the user, I thought it made sense to include some kind of specification/error message here to ensure better UX. I also split, train, and evluate the model here, while sharing some output results.
+# When the user clicks the "Train Model" button, this code splits the data into features and target, validates that the target is suitable for classification, divides data into training and testing sets, then trains either a Decision Tree or Logistic Regression model based on user selection. After training, it evaluates model performance using accuracy scores and classification reports, and visualizes results through a confusion matrix and, for Decision Trees, a feature importance chart
 if st.button("Train Model 🚀"):
     X = df[features]
     y = df[target]
@@ -110,13 +112,14 @@ if st.button("Train Model 🚀"):
     st.write(f"**Accuracy:** {round(acc, 4)}")
     st.text("Classification Report:\n" + cr)
 
-    # I thought it was valuable to add some visualizations here. In light of what we've been discussing in class over the last few weeks, I thought it was good to have a Confusion Matrix and Feature Importance (Decision Tree) to begin with
+    # This code creates and displays a confusion matrix visualization. It first sets up a matplotlib figure and axis, then uses ConfusionMatrixDisplay to plot the confusion matrix (stored in variable "cm") with class labels from the model. The visualization uses a blue color scheme ("Blues"), removes the colorbar for cleaner appearance, adds a bold title, and displays the resulting figure in the Streamlit app using st.pyplot()
     fig, ax = plt.subplots()
     disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=model.classes_)
     disp.plot(ax=ax, cmap="Blues", colorbar=False)
     ax.set_title("Confusion Matrix", fontsize=14, fontweight='bold')
     st.pyplot(fig)
-
+    
+    # This code conditionally displays feature importance for Decision Tree models. It extracts feature importance values from the model, creates a DataFrame pairing feature names with their importance scores, sorts them by importance in descending order, and generates a horizontal bar chart using seaborn
     if model_option == "Decision Tree":
         st.subheader("Feature Importance (Decision Tree) 🌲")
 
@@ -133,7 +136,7 @@ if st.button("Train Model 🚀"):
         ax.set_ylabel("Feature", fontsize=12)
         st.pyplot(fig)
 
-# Beyond the visualizations described and coded previously, I thought it would be useful to have a Correlation Heatmap and Histogram + Kernel Density Estimation of a feature. I'll be providing more extensive rationales of why I chose these visualizations in the ReadMe 
+# This code creates an expandable section displaying a correlation heatmap, filtering for numeric columns among the selected features and target, calculates correlations between these variables, and visualizes them as a heatmap using seaborn with a coolwarm color scheme and numerical annotations. Essentially, visualization helps users identify relationships between features, showing which variables are positively or negatively correlated, or displaying an informational message if no numeric columns are available
 st.subheader("Feature Correlation Heatmap 🔗")
 with st.expander("See correlation between selected numeric features 🔍"):
     numeric_cols = df[features + [target]].select_dtypes(include='number')
@@ -146,6 +149,7 @@ with st.expander("See correlation between selected numeric features 🔍"):
     else:
         st.info("No numeric columns found to plot correlation matrix.")
 
+# This code creates an interactive feature distribution visualization. It adds a dropdown menu allowing users to select any feature for analysis, then generates a histogram with an overlaid kernel density estimate (KDE) curve using seaborn
 st.subheader("Histogram + KDE of a Feature 📊")
 selected_hist_feature = st.selectbox("Choose a feature to explore distribution 📈", features)
 if selected_hist_feature:
