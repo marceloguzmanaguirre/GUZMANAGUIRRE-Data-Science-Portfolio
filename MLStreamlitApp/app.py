@@ -58,7 +58,6 @@ df.dropna(inplace=True)
 for col in df.select_dtypes(include="object").columns:
     df[col] = LabelEncoder().fit_transform(df[col].astype(str))
 
-
 # User is able preview the dataset
 st.subheader("Dataset Preview 🔍")
 st.dataframe(df.head())
@@ -74,7 +73,7 @@ if not features:
 st.sidebar.subheader("Train/Test Split 🧪")
 test_size = st.sidebar.slider("This slider sets the ratio of training to testing data. More training data can improve learning, while testing data checks model performance", 0.1, 0.5, 0.2)
 
-# User is prompted to select a model, either decision or logistic regression. Considering the nature of most datasets, I thought it made sense to choose log reg as the default setup for the app
+# This code adds a model selection interface in the sidebar. It displays a dropdown menu allowing users to choose between "Decision Tree" and "Logistic Regression" models, then conditionally presents appropriate hyperparameter controls - a slider for tree depth (1-20, default 5) if Decision Tree is selected, or a slider for maximum iterations (2-1000, default 100) if Logistic Regression is chosen, providing intuitive model customization options
 st.sidebar.subheader("Model Selection 📊")
 model_option = st.sidebar.selectbox("Choose a model", ["Decision Tree", "Logistic Regression"])
 if model_option == "Decision Tree":
@@ -112,14 +111,14 @@ if st.button("Train Model 🚀"):
     st.write(f"**Accuracy:** {round(acc, 4)}")
     st.text("Classification Report:\n" + cr)
 
-    # This code creates and displays a confusion matrix visualization. It first sets up a matplotlib figure and axis, then uses ConfusionMatrixDisplay to plot the confusion matrix (stored in variable "cm") with class labels from the model. The visualization uses a blue color scheme ("Blues"), removes the colorbar for cleaner appearance, adds a bold title, and displays the resulting figure in the Streamlit app using st.pyplot()
+    # Here, I create and display a confusion matrix visualization. It first sets up a matplotlib figure and axis, then uses ConfusionMatrixDisplay to plot the confusion matrix (stored in variable "cm") with class labels from the model. The visualization uses a blue color scheme ("Blues"), removes the colorbar for cleaner appearance, adds a bold title, and displays the resulting figure in the Streamlit app using st.pyplot()
     fig, ax = plt.subplots()
     disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=model.classes_)
     disp.plot(ax=ax, cmap="Blues", colorbar=False)
     ax.set_title("Confusion Matrix", fontsize=14, fontweight='bold')
     st.pyplot(fig)
     
-    # This code conditionally displays feature importance for Decision Tree models. It extracts feature importance values from the model, creates a DataFrame pairing feature names with their importance scores, sorts them by importance in descending order, and generates a horizontal bar chart using seaborn
+    # This conditionally displays feature importance for Decision Tree models. It extracts feature importance values from the model, creates a DataFrame pairing feature names with their importance scores, sorts them by importance in descending order, and generates a horizontal bar chart using seaborn
     if model_option == "Decision Tree":
         st.subheader("Feature Importance (Decision Tree) 🌲")
 
@@ -149,7 +148,7 @@ with st.expander("See correlation between selected numeric features 🔍"):
     else:
         st.info("No numeric columns found to plot correlation matrix.")
 
-# This code creates an interactive feature distribution visualization. It adds a dropdown menu allowing users to select any feature for analysis, then generates a histogram with an overlaid kernel density estimate (KDE) curve using seaborn
+# Interactive feature distribution visualization is created here, adding a dropdown menu allowing users to select any feature for analysis, then generates a histogram with an overlaid kernel density estimate (KDE) curve using seaborn
 st.subheader("Histogram + KDE of a Feature 📊")
 selected_hist_feature = st.selectbox("Choose a feature to explore distribution 📈", features)
 if selected_hist_feature:
