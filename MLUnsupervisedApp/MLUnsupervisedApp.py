@@ -59,6 +59,7 @@ st.sidebar.header("🧠 Model & Hyperparameters 🎚️")
 model_type = st.sidebar.selectbox("Choose model", ["KMeans", "PCA", "Hierarchical Clustering"])
 train_button = st.button("🚀 Train Model")
 
+# This code allows users to perform KMeans clustering analysis with configurable parameters, offering an elbow plot to help identify the optimal number of clusters and visualizing results through PCA-reduced scatter plots that show how data points group together, along with silhouette scores to evaluate clustering qualities
 if model_type == "KMeans":
     st.subheader("🐑 KMeans Clustering")
     
@@ -120,6 +121,7 @@ if model_type == "KMeans":
         sns.scatterplot(data=df_vis, x="PC1", y="PC2", hue="Cluster", palette="Set2", ax=ax2)
         ax2.set_title("Clusters (PCA)")
         st.pyplot(fig2)
+# This code allows users to perform hierarchical clustering analysis by selecting their desired number of clusters, then provides comprehensive visualization tools including PCA-projected cluster plots and dendrograms that reveal the hierarchical structure of their data, along with silhouette scores to evaluate clustering quality 
 elif model_type == "Hierarchical Clustering":
     st.subheader("🌲 Hierarchical Clustering")
     st.sidebar.subheader("Number of Clusters")
@@ -167,7 +169,7 @@ elif model_type == "Hierarchical Clustering":
         dendrogram(linked, truncate_mode="lastp", p=20, leaf_font_size=10, ax=ax5)
         ax5.set_title("Hierarchical Clustering Dendrogram")
         st.pyplot(fig5)
-
+# This code allows users to perform Principal Component Analysis by selecting their desired number of components, then visualizes the results through explained variance charts and transformed data tables to help them understand how their high-dimensional data can be effectively reduced while preserving important information
 elif model_type == "PCA":
     st.subheader("📊 Principal Component Analysis")
     st.sidebar.subheader("PCA Components")
